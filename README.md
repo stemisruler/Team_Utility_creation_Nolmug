@@ -5,8 +5,10 @@
 ##### This is a H5
 ###### This is a H6
 
+<div align='center'>
+ <img src="https://capsule-render.vercel.app/api?type=shark&color=auto&height=400&section=header&text=4조-놀고먹조%20리액트&fontSize=90" />
+</div>
 
-![header](https://capsule-render.vercel.app/api?type=shark&color=auto&height=400&section=header&text=4조-놀고먹조%20리액트&fontSize=90)
 
 
 <H2 align='center'>🧶Tech Stacks📚</H2>
