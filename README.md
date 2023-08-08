@@ -11,6 +11,9 @@
 
 #프로젝트 소개
 
+#프로젝트 문서 (기획 및 디자인 방법 논의, 브레인 스토밍, 기획서)
+https://docs.google.com/document/d/1qx_2Rx0_r8Zxv5-hGX5Iu_If-1NCngNqkqd-jq7Z8gQ/edit
+
 #개발 기간
 
 #개발환경
