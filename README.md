@@ -7,7 +7,7 @@
 
 ![header](https://capsule-render.vercel.app/api?type=shark&color=auto&height=300&section=header&text=4조-놀고먹조%20리액트&fontSize=90)
 
-<H2 align='center'>Tech Stacks</H2>
+<H2 align='center'>🧶Tech Stacks📚</H2>
 
 <div align='center'>
 <img src="https://img.shields.io/badge/react-009966?style=flat&logo=react&logoColor=white"/>
