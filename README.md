@@ -17,6 +17,7 @@
  
 <h1>프로젝트 제목 NOLMUG</h1>
 
+
 <h1>프로젝트 소개</h1>
 20대를 타겟으로 한, 음식점/ 카페-디저트점 / 핫 플레이스 (관광명소, 유명한 곳, 좋은 산책로) 추천 웹
 
@@ -36,6 +37,9 @@ REACT USE EFFECT, USE STATE, KAKAOMAP API, OPEN WEATEHR API, NAVER SEARCH API
 <h3>멤버구성</h3>
 
 <b>팀장 김동원</b>
+
 <b>육경수</b>
+
 <b>허지훈</b>
+
 <b>박준호</b>
