@@ -11,10 +11,10 @@
 
 <div align='center'>
 <img src="https://img.shields.io/badge/react-009966?style=flat&logo=react&logoColor=white"/>
-<img src="https://img.shields.io/badge/Java-009966?style=flat&logo=Java&logoColor=white"/>
- <img src="https://img.shields.io/badge/HTML5-009966?style=flat&logo=HTML5&logoColor=white"/>
+<img src="https://img.shields.io/badge/Java-007396?style=flat&logo=Java&logoColor=white"/>
+ <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=HTML5&logoColor=white"/>
  <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=CSS3&logoColor=white" />
- <img src="https://img.shields.io/badge/PYTHON-1572B6?style=flat&logo=PYTHON&logoColor=white" />
+ <img src="https://img.shields.io/badge/PYTHON-3776AB?style=flat&logo=PYTHON&logoColor=white" />
 </div>
 
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jinHwigyeol&layout=compact"><br><br>
