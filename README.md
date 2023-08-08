@@ -15,8 +15,8 @@
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jinHwigyeol&layout=compact"><br><br>
 </div>
  
-<h1>프로젝트 제목 NOLMUG</h1>
-
+<h1>프로젝트 제목</h1>
+<b>먹고놀고, 놀고먹자! NOLMUG</b>
 
 <h1>프로젝트 소개</h1>
 20대를 타겟으로 한, 음식점/ 카페-디저트점 / 핫 플레이스 (관광명소, 유명한 곳, 좋은 산책로) 추천 웹
