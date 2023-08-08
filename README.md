@@ -25,6 +25,7 @@ https://docs.google.com/document/d/1qx_2Rx0_r8Zxv5-hGX5Iu_If-1NCngNqkqd-jq7Z8gQ/
 #주요 기능
 
 #멤버구성
+
 #팀장 김동원
 
 #디자인 육경수
