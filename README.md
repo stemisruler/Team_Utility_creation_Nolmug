@@ -1,10 +1,3 @@
-# 제목, 프로젝트 소개, 개발기간, 개발환경, 주요기능 H1, 멤버구성
-## This is a H2
-### This is a H3
-#### This is a H4
-##### This is a H5
-###### This is a H6
-
 <div align='center'>
  <img src="https://capsule-render.vercel.app/api?type=shark&color=auto&height=400&section=header&text=4조-놀고먹조%20리액트&fontSize=90" />
 
@@ -14,9 +7,9 @@
 
 <img src="https://img.shields.io/badge/react-009966?style=flat&logo=react&logoColor=white"/>
 <img src="https://img.shields.io/badge/JavaScript-007396?style=flat&logo=JavaScript&logoColor=white"/>
- <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=HTML5&logoColor=white"/>
- <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=CSS3&logoColor=white" />
- <img src="https://img.shields.io/badge/PYTHON-3776AB?style=flat&logo=PYTHON&logoColor=white" />
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=HTML5&logoColor=white"/>
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=CSS3&logoColor=white" />
+<img src="https://img.shields.io/badge/PYTHON-3776AB?style=flat&logo=PYTHON&logoColor=white" />
 
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jinHwigyeol&layout=compact"><br><br>
 </div>
