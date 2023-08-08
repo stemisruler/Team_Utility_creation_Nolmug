@@ -10,6 +10,8 @@
 <div align='center'>
 <img src="https://img.shields.io/badge/react-009966?style=flat&logo=react&logoColor=white"/>
 </div>
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jinHwigyeol&layout=compact"><br><br>
  
 #프로젝트 제목
 
