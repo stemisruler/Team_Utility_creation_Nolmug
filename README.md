@@ -17,7 +17,9 @@
  <img src="https://img.shields.io/badge/PYTHON-3776AB?style=flat&logo=PYTHON&logoColor=white" />
 </div>
 
+<div align='center'>
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jinHwigyeol&layout=compact"><br><br>
+</div>
  
 #프로젝트 제목
 
