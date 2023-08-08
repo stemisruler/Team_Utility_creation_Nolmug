@@ -6,6 +6,10 @@
 ###### This is a H6
 
 ![header](https://capsule-render.vercel.app/api?type=shark&color=auto&height=300&section=header&text=4조%20리액트&fontSize=90)
+
+<div align='center'>
+<img src="https://img.shields.io/badge/react-009966?style=flat&logo=react&logoColor=white"/>
+</div>
  
 #프로젝트 제목
 
