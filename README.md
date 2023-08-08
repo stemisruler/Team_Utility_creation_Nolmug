@@ -3,7 +3,7 @@
 
 
 
-<H2 align='center'>🧶Tech Stacks📚</H2>
+<H2 align='center'>🧶 Tech Stacks 📚</H2>
 
 <img src="https://img.shields.io/badge/react-009966?style=flat&logo=react&logoColor=white"/>
 <img src="https://img.shields.io/badge/JavaScript-007396?style=flat&logo=JavaScript&logoColor=white"/>
