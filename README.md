@@ -15,17 +15,21 @@
 </div>
  
 #프로젝트 제목
+NOLMUG
 
 #프로젝트 소개
+20대를 타겟으로 한, 음식점/ 카페-디저트점 / 핫 플레이스 (관광명소, 유명한 곳, 좋은 산책로) 추천 웹
 
 #프로젝트 문서 (기획 및 디자인 방법 논의, 브레인 스토밍, 기획서)
 https://docs.google.com/document/d/1qx_2Rx0_r8Zxv5-hGX5Iu_If-1NCngNqkqd-jq7Z8gQ/edit
 
 #개발 기간
+8월 1개월
 
 #개발환경
 
 #주요 기능
+REACT USE EFFECT, USE STATE, KAKAOMAP API, OPEN WEATEHR API, NAVER SEARCH API
 
 #멤버구성
 
