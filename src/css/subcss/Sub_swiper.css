@@ -1,0 +1,72 @@
+#app {
+  height: 100%;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* sub page Swiper  */
+/* sub page Swiper  */
+.swiper-button-prev:after, 
+.swiper-button-next:after {
+  font-size: 84px!important;
+}
+
+.subPage2 #sub{
+  background-color: #000;
+  position: relative;
+  height: 610px;
+  overflow: hidden;
+  width: 1920px;
+}
+.subPage2 #sub .sub{
+  background-color:#FA709A;
+  opacity: 0.66;
+}
+.subPage2 #sub .swiper-slide-next,
+.subPage2 #sub .swiper-slide-next+.sub,
+.subPage2 #sub .swiper-slide-next+.sub+.sub
+{  
+  opacity: 1;
+}
+.subPage2 .swiper-button-prev,
+.subPage2 .swiper-button-next{
+  width: 84px!important;
+  color: rgb(255, 255, 255)!important;
+}
+.swiper-button-prev{
+}
+.swiper-button-next{
+}
+
+
