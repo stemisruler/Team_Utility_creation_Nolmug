@@ -4,7 +4,7 @@ import { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
-import "./css/style.css";
+import "./css/MainVisual.css";
 function MainVisual () {
   return (
     <section className='MainVisual'>
