@@ -1,0 +1,77 @@
+header {
+  display: flex;
+  background-color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  width: 720px;
+  height: 70px;
+  border: 1px solid #000;
+  font-family: var(--main-font);
+
+}
+
+.headerWeather{
+}
+
+h6{
+  font-family: var(--main-font);
+
+  font-size: var(--h6-size);
+  font-weight: 600;
+}
+
+.city{
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.city p{
+  font-family: var(--main-font);
+
+  font-size: var(--p-size);
+}
+.temperaturePlus{
+  display: flex;  
+  margin-bottom: 0.5rem;
+}
+
+.temperaturePlus span{
+  font-size: var(--footer-size);
+}
+.city h6, .city img, .city p{
+  margin-left: 0.5rem;
+
+}
+
+.headerUser{
+  display: flex;
+  align-items: center;  
+}
+
+.headerPerson img{
+  width: 30px;
+  height: 30px;
+  margin-right: 2rem;
+}
+
+.headerHamburger {
+  width: 30px;
+  height: 20.83px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 2rem;
+
+}
+
+.headerHamburger span {
+  display: block;
+  height: 4.17px;
+  background-color: black; 
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+  bottom: 10%;
+
+}
