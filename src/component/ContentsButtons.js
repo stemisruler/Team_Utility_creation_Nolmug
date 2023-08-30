@@ -207,6 +207,14 @@ const ContentsButtons = () => {
             <img src={item.images[0]} alt={item.title}
             onClick={() => openPopup(item.images, 0)}  // 여기 수정
   />
+  <span className='item_box'>
+
+  </span>
+  <div className='item'>
+ <p>{item.title}</p>
+    <p>{item.menu[0]}</p>
+    <p>{item.description}</p>
+ </div>
           </div>
         ))}
   
