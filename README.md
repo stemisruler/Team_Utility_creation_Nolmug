@@ -30,7 +30,7 @@ https://docs.google.com/document/d/1qx_2Rx0_r8Zxv5-hGX5Iu_If-1NCngNqkqd-jq7Z8gQ/
 
 
 <h2>개발환경</h2>
-React, HTML5, CSS3, PYTHON, Raspi, JS
+React, HTML5, CSS3, JS, node JS
 
 
 <h2>주요 기능</h2>
