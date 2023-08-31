@@ -1,27 +1,15 @@
-import React, { useEffect,useState } from 'react';
-import './App.css';
+import React, { useEffect,useState} from 'react';
+import { useLocation } from 'react-router-dom';
 import './css/reset.css';
-import WeatherHeader from './component/WeatherHeader';
-import Header_search from './Header_search';
-import Main from './component/Main'
-import MainVisual  from './MainVisual ';
-import Maincontent2 from './Maincontent2';
-import ContentsButtons from './component/ContentsButtons';
-
-import Sidebar from './component/Sidebar'
-import Footer from './component/Footer'
+import Home from './Home';
 import Sub2 from './component/Sub2'
 import Sub1 from './component/Sub1'
 
 import { UserProvider, useUser } from './component/UserContext'; 
+import { BrowserRouter,Routes, Route } from 'react-router-dom';
 
 function App() {
   const [renderStatus, setRenderStatus] = useState(false);
-
-  const isRendering = () => {
-    setRenderStatus(!renderStatus);
-  }
- 
   const { activeUser, setActiveUser, userProfiles } = useUser();
 
   // 배경색 변경
@@ -54,25 +42,18 @@ function App() {
       window.removeEventListener('keydown', handleKeyDown);
     };
   }, [userProfiles, setActiveUser]);
+  const location = useLocation();
 
   return (
+    
     <div className="App">
-       <Main />
-       <div className='bodyWrap'>
-        <WeatherHeader isOn={isRendering} />
-        <Header_search/>
-        <MainVisual />
-      <ContentsButtons />
-      <Maincontent2/>
-        <Footer isOn={isRendering} />
-        
-      </div>
-      <Sidebar classStatus={renderStatus} />
-      {/* <Sub2/> */}
-      {/* <Sub1/> */}
-      {/* <Header_search/> */}
-
+  {location.pathname === '/' && <Home />}
+      <Routes>
+        <Route path="/Sub1" element={<Sub1 />}/>
+        <Route path="/Sub2" element={<Sub2 />}/>
+      </Routes>
     </div>
+    
   );
 }
 
@@ -83,3 +64,4 @@ export default function WrappedApp() {
     </UserProvider>
   );
 }
+
