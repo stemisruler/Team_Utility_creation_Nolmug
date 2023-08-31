@@ -36,6 +36,7 @@ React, HTML5, CSS3, JS, node JS
 <h2>주요 기능</h2>
 REACT USE EFFECT, USE STATE, KAKAOMAP API, OPEN WEATEHR API, NAVER SEARCH API
 
+<h2>바로가기</h2>
 
 <h3>멤버구성</h3>
 
