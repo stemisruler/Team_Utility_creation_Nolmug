@@ -9,10 +9,8 @@
 <img src="https://img.shields.io/badge/JavaScript-007396?style=flat&logo=JavaScript&logoColor=white"/>
 <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=HTML5&logoColor=white"/><br>
 <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=CSS3&logoColor=white" />
-<img src="https://img.shields.io/badge/PYTHON-3776AB?style=flat&logo=PYTHON&logoColor=white" />
-<img src="https://img.shields.io/badge/RaspberryPi-A22846?style=flat&logo=raspberrypi&logoColor=white" /><br>
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jinHwigyeol&layout=compact"><br><br>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=stemisruler&layout=compact"><br><br>
 </div>
  
 <h1>프로젝트 제목</h1>
@@ -32,11 +30,16 @@ https://docs.google.com/document/d/1qx_2Rx0_r8Zxv5-hGX5Iu_If-1NCngNqkqd-jq7Z8gQ/
 
 
 <h2>개발환경</h2>
-React, HTML5, CSS3, PYTHON, Raspi, JS
+React, HTML5, CSS3, JS, node JS
 
 
 <h2>주요 기능</h2>
 REACT USE EFFECT, USE STATE, KAKAOMAP API, OPEN WEATEHR API, NAVER SEARCH API
+
+<h2>피그마 링크</h2>
+https://www.figma.com/file/oV4EpeR06Pnwbk3raIsMgz/%5B%ED%94%BC%EA%B7%B8%EB%A7%88%5D[…]8!!?type=design&node-id=0%3A1&mode=design&t=ZRcUyDOxCyhfuipF-1
+
+<h2>바로가기</h2>
 
 
 <h3>멤버구성</h3>
