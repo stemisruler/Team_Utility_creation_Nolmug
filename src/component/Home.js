@@ -1,15 +1,15 @@
 import React from 'react'
 import { useEffect,useState } from 'react';
-import './css/reset.css';
-import WeatherHeader from './component/WeatherHeader';
-import Header_search from './Header_search';
-import Main from './component/Main'
+import '../css/reset.css';
+import WeatherHeader from './WeatherHeader';
+import Header_search from '../Header_search';
+import Main from './Main'
 import MainVisual  from './MainVisual ';
-import Maincontent2 from './Maincontent2';
-import ContentsButtons from './component/ContentsButtons';
+import Maincontent2 from '../Maincontent2';
+import ContentsButtons from './ContentsButtons';
 
-import Sidebar from './component/Sidebar'
-import Footer from './component/Footer'
+import Sidebar from './Sidebar'
+import Footer from './Footer'
 
 
 function Home() {

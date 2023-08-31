@@ -1,7 +1,7 @@
 import React, { useEffect,useState} from 'react';
 import { useLocation } from 'react-router-dom';
 import './css/reset.css';
-import Home from './Home';
+import Home from './component/Home';
 import Sub2 from './component/Sub2'
 import Sub1 from './component/Sub1'
 
