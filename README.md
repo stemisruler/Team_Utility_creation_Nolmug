@@ -14,7 +14,7 @@
  <br>
  <br>
 
- <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jinHwigyeol&layout=compact">
+ <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=react4jo&layout=compact">
 </div>
  
  <br>
