@@ -1,12 +1,6 @@
 <div align='center'>
  <img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=250&section=header&text=4조-놀고먹조%20리액트&fontSize=80" />
 
-
-
-# 리액트 4조 - 놀고먹조
-
-
-
 </div>
  <br>
  <br>
