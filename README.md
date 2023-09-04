@@ -12,8 +12,7 @@
 </div>
 
 <div dir='auto'>
- <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=stemisruler&layout=compact"><br><br>
-
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=stemisruler&layout=compact"><br><br>
 [![react4jo's GitHub stats](https://github-readme-stats.vercel.app/api?username=stemisruler)](https://github.com/stemisruler/github-readme-stats)
 </div>
 
