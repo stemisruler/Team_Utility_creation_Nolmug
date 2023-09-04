@@ -5,7 +5,7 @@
 
 <H2 align='center'>리액트 4조 - 놀고먹조</H2>
 
-[![Solved.ac Profile](http://mazassumnida.wtf/api/generate_badge?boj=jinHwigyeol)](https://solved.ac/jinHwigyeol)<br/>
+
 
 </div>
  <br>
