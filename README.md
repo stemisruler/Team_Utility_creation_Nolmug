@@ -14,12 +14,12 @@
  <br>
 <div align='center'>
  
-[![react4jo's GitHub stats](https://github-readme-stats.vercel.app/api?username=stemisruler)](https://github.com/stemisruler/github-readme-stats)
+[![react4jo's GitHub stats](https://github-readme-stats.vercel.app/api?username=jinHwigyeol)](https://github.com/jinHwigyeol/github-readme-stats)
  
  <br>
  <br>
  
- [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=stemisruler)](https://github.com/stemisruler/github-readme-stats)
+ [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=jinHwigyeol)](https://github.com/jinHwigyeol/github-readme-stats)
 </div>
 
  
