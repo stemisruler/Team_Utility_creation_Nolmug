@@ -1,7 +1,7 @@
 <div align='center'>
  <img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=250&section=header&text=4조-놀고먹조%20리액트&fontSize=80" />
 
-<img src="https://github-readme-stats.vercel.app/api?username=jinHwigyeol&theme=vue&show_icons=true&count_private=true&hide=contribs,prs,stars"/></a>
+<img src="https://github-readme-stats.vercel.app/api?username=jinHwigyeol&theme=vue&show_icons=true&count_private=true&hide=contribs,stars"/></a>
 </div>
  <br>
  <br>
