@@ -3,7 +3,7 @@
 
 
 
-<H2 align='center'>🧶 Tech Stacks 📚</H2>
+<H2 align='center'>리액트 4조 - 놀고먹조</H2>
 
 <img src="https://img.shields.io/badge/React-009966?style=flat&logo=react&logoColor=white"/>
 <img src="https://img.shields.io/badge/JavaScript-007396?style=flat&logo=JavaScript&logoColor=white"/>
@@ -13,7 +13,7 @@
  <br>
  <br>
 <div align='center'>
- 
+ 🧶 Tech Stacks 📚
 [![react4jo's GitHub stats](https://github-readme-stats.vercel.app/api?username=jinHwigyeol)](https://github.com/jinHwigyeol/github-readme-stats)
  
  <br>
