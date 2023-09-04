@@ -54,4 +54,7 @@ https://www.figma.com/file/oV4EpeR06Pnwbk3raIsMgz/%5B%ED%94%BC%EA%B7%B8%EB%A7%88
 
 <b>박준호</b>
 
-![Footer](https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=footer)
+<div align='center'>
+ ![Footer](https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=footer)
+</div>
+
