@@ -3,7 +3,7 @@
 
 
 
-<H2 align='center'>리액트 4조 - 놀고먹조</H2>
+##리액트 4조 - 놀고먹조
 
 
 
@@ -59,10 +59,6 @@ https://www.figma.com/file/oV4EpeR06Pnwbk3raIsMgz/%5B%ED%94%BC%EA%B7%B8%EB%A7%88
 
 
 <h3>멤버구성</h3>
-
-
-<span style="color:yellow">노란 글씨입니다.</span>
-
 
 <b>팀장 김동원</b>
 
