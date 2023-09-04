@@ -5,6 +5,7 @@
 
 <H2 align='center'>리액트 4조 - 놀고먹조</H2>
 
+[![](http://mazassumnida.wtf/api/v2/generate_badge?boj={https://github.com/jinHwigyeol})](https://solved.ac/{(https://github.com/jinHwigyeol)})
 
 </div>
  <br>
