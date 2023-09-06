@@ -44,13 +44,20 @@ React, HTML5, CSS3, JS, node JS
 
 
 <h2>주요 기능</h2>
-REACT USE EFFECT, USE STATE, KAKAOMAP API, OPEN WEATEHR API, NAVER SEARCH API
+REACT USE EFFECT, USE STATE, KAKAOMAP API, OPEN WEATEHR API
 
 <h2>피그마 링크</h2>
 https://www.figma.com/file/oV4EpeR06Pnwbk3raIsMgz/%5B%ED%94%BC%EA%B7%B8%EB%A7%88%5D[…]8!!?type=design&node-id=0%3A1&mode=design&t=ZRcUyDOxCyhfuipF-1
 
-<h2>바로가기</h2>
+<h2>필요한 INSTALL</h2>
+npm install axios
+npm install swiper
+npm install kakao-maps-sdk
+npm install react-router-dom@6
+npm install font-awesome --save
 
+webpack 설정 오류가 나올시
+npm install stream-http
 
 <h3>멤버구성</h3>
 
