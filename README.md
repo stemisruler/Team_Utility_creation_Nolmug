@@ -50,11 +50,11 @@ REACT USE EFFECT, USE STATE, KAKAOMAP API, OPEN WEATEHR API
 https://www.figma.com/file/oV4EpeR06Pnwbk3raIsMgz/%5B%ED%94%BC%EA%B7%B8%EB%A7%88%5D[…]8!!?type=design&node-id=0%3A1&mode=design&t=ZRcUyDOxCyhfuipF-1
 
 <h2>필요한 INSTALL</h2>
-npm install axios
-npm install swiper
-npm install kakao-maps-sdk
-npm install react-router-dom@6
-npm install font-awesome --save
+npm install axios 
+<br>npm install swiper
+<br>npm install kakao-maps-sdk
+<br>npm install react-router-dom@6
+<br>npm install font-awesome --save
 
 webpack 설정 오류가 나올시
 npm install stream-http
