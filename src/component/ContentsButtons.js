@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import '../css/contentsbuttons.css';
 import { data } from './Data'; // Data.js 파일을 import
+import {Link} from 'react-router-dom';
 
 // 매핑 객체 추가
 const categoryMapping = {
@@ -190,8 +191,11 @@ const ContentsButtons = () => {
         key={index} 
         onClick={() => handleCategoryClick(category)}
         className={selectedCategories.includes(category) ? 'selected' : 'unselected'}
-        style={selectedCategories.includes(category) ? { backgroundColor: 'red' } : { backgroundColor: '#E9E9E9' }}
-  >
+        style={{
+          backgroundColor: selectedCategories.includes(category) ? 'red' : '#E9E9E9',
+          cursor: 'pointer'
+        }}
+        >
     {category}
       </button>
     ))}
@@ -210,9 +214,9 @@ const ContentsButtons = () => {
   <span className='item_box'>
 
   </span>
-  <div className='item'>
+  <div className='item' onClick={() => openPopup(item.images, 0)}>
  <p>{item.title}</p>
-    <p>{item.menu[0]}</p>
+   <p>{item.menu?.[0]}</p>
     <p>{item.description}</p>
  </div>
           </div>
@@ -230,7 +234,7 @@ const ContentsButtons = () => {
 
             {/* 자세히보기 및 airplane.png */}
           <div className="detail-view">
-            <span>자세히보기</span>
+            <Link to="Sub2"><span>자세히보기</span></Link>
             <img src="./img/airplane.png" alt="Airplane" />
           </div>
         </div>

@@ -1,0 +1,110 @@
+.restaurant {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  height: 170px;
+  width: 461px;
+}
+
+.restaurant img {
+  width: 90px;
+  height: 90px;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  border-radius: 5px;
+}
+
+.restaurant .details {
+  height: 150px;
+  width: 310px;
+  position: relative;
+}
+
+.restaurant .details h2 {
+  font-size: 20px;
+  margin-top: 26px;
+}
+
+.restaurant .details p {
+  font-size: 12px;
+  margin: 0;
+}
+
+.restaurant .details .description {
+  position: absolute;
+  bottom: 38px;
+  font-size: 10px;
+}
+
+.subHeader {
+  width: 99.9%;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.subNav {
+  width: 1856px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subLogin ul {
+  display: flex;
+  width: 133px;
+  justify-content: space-between;
+}
+
+.subSearch input[type=text] {
+  padding: 1rem;
+  width: 500px;
+  border-radius: 18px;
+  border: none;
+  border-radius: 18px;
+  background: rgba(255, 70, 70, 0.18);
+}
+input:focus {
+  outline: none;
+  border: none;
+}
+ /* 아이콘 */
+ .subSearch {
+  position: relative;
+}
+
+.search-input {
+  padding-right: 30px;  /* 아이콘의 너비와 여백에 맞게 조절 */
+}
+
+.search-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;  /* 기본 색은 흰색 */
+  cursor: pointer;
+}
+.search-icon.focused {
+  color: black;
+}
+
+.container {
+  display: flex;
+  width: 1920px;
+  height: 871px;
+}
+
+.restaurant-container {
+  width: 25%;
+  overflow-y: auto;
+  height: 100%;
+}
+
+.mapping {
+  width: 75%;
+  height: 100%;
+}

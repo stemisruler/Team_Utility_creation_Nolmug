@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&display=swap');
+/* font-family: 'IBM Plex Sans KR', sans-serif;*/
+@font-face {
+  font-family: 'omyu_pretty';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Reset */
+ * {
+  outline:0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+    width:100%;
+}
+html {
+  font-size:16px;
+  font-weight: normal;
+}
+body { 
+    width:100%; 
+    background:#fff; 
+    min-width:320px;
+    -webkit-text-size-adjust:none;
+    word-wrap:break-word; 
+    word-break:break-all; 
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size:100%;
+    font-weight:normal;
+}
+ul,ol,li {
+    list-style:none;
+}
+a {
+    text-decoration:none;
+    color: black;
+} 
+/* Root */
+:root{
+  /* font-family */
+  --main-font : 'IBM Plex Sans KR';
+  --point-font : 'omyu_pretty';
+  /* 사용 예시
+  h1 {
+    font-family: var(--main-font), sans-serif; 'sans-serif'는 폰트가 로드되지 않았을 때 대체 폰트로 사용됩니다. 
+  } */
+  /* font-size */
+  --h1-size : 4.813rem; /* 77px 데스크탑, 좌측 메인 캐치 프라이즈 77px */
+  --h2-size : 2.5rem; /* 40px, 우측 메인 로고,  3가지 키워드 메뉴바(음식-카페디저트-핫플레이스)*/
+  --h3-size : 2.25rem; /* 36px */
+  --h4-size : 2rem; /* 32px 섹션 별 제목 사이즈 */
+  --h5-size : 1.75rem; /* 28px */
+  --h6-size : 1.5rem; /* 24px */
+  --p-size : 1.25rem; /* 20px 우측 메인 온도 표시 부분, 해시태그, 햄버거 메뉴의 날씨 글자  */
+  --span-size : 1.125rem; /* 18px, 햄버거 메뉴의 메뉴 사이즈, 최고 최저 온도 */
+  --footer-size : 0.75rem; /* 푸터 글씨 사이즈(하단 메뉴) */
+  
+  /* main color */
+  --beige-color : #FFE4DA;
+  --orange-color : #FFB400;
+  --yellow-color : #FFE345;
+  --black-color: #000;
+  --white-color: #fff;
+  --gray-color : #E9E9E9;
+  /* gradient color */
+  --sunny-gradient-up : #FD82A7;  /* (그라데이션 맑은 날 (위)) */
+  --sunny-gradient-down : #FF8585;  /* (맑은 날 (아래)) */
+  --rainy-gradient-up : #33AED7;   /* (비오는 날 (위)) */
+  --rainy-gradient-down : #6C92F2; /* (비오는 날 (아래)) */
+  --cloudy-gradient-up :#135CA2; /* ( 흐린날 (위)) */
+  --cloudy-gradient-down : #75C2F6; /* (흐린날 (아래)) */
+}
+#app {
+  height: 100%;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+.Maincontent2{
+  background-color: #fff;
+  width: 720px;
+  height: 1077px;
+  display: block;
+}
+.Maincontent2 .Swiper {}
+.Maincontent2 .s {
+  position: absolute;
+  background-color: #e9e9e9;
+  display: block;
+  bottom: 59.3%;
+  width: 620px;
+  height: 1px;
+}
+.Maincontent2 .swiper .a{
+  object-fit: cover;
+  position: absolute;
+  top: 102px;
+  width: 620px;
+  height: 300px;
+  border-radius: 18px;
+}
+.Maincontent2 .swiper .imgbx{
+  margin: 41% 0 0 -14%;
+  left: 0;
+  height: 430px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.Maincontent2 .swiper .imgbx1{
+  margin: 41% 0 0 -14%;
+  left: 0;
+  height: 326px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.Maincontent2 .swiper .imgbx div{
+  width: 500px;
+  display: flex;
+}
+
+.Maincontent2 .swiper .imgbx1 div{
+  justify-content: space-between;
+  width: 500px;
+  display: flex;
+}
+.Maincontent2 .swiper .imgbx div nav{
+  margin-left: 50px;
+  height: inherit;
+  width: 66%;
+}
+.Maincontent2 .swiper .imgbx1 div nav{
+  height: inherit;
+  width: 66%;
+}
+.Maincontent2 .swiper .imgbx .text_box{
+}
+.Maincontent2 .swiper .imgbx .text_box p{
+  font-family: var(--point-font);
+  line-height: 2.3;
+  font-size: 20px;
+  color: #000;
+}
+.Maincontent2 .swiper .imgbx1 .text_box p{
+  font-family: var(--point-font);
+  line-height: 2.3;
+  font-size: 20px;
+  color: #000;
+}
+.Maincontent2 .swiper .imgbx .text_box p:nth-child(1){
+  font-weight: 600;
+}
+.Maincontent2 .swiper .imgbx1 .text_box p:nth-child(1){
+  font-weight: 600;
+}
+.Maincontent2 .swiper .imgbx .text_box p:nth-child(2){}
+.Maincontent2 .swiper .imgbx img:nth-child(1){
+  width: 140px;
+  height: 110px;
+  display: block;
+}
+.Maincontent2 .swiper .imgbx .text_box p:nth-child(2){}
+.Maincontent2 .swiper .imgbx1 img:nth-child(1){
+  width: 140px;
+  height: 110px;
+  display: block;
+}
+.Maincontent2 .swiper .imgbx img:nth-child(2){
+  width: 140px;
+  height: 110px;
+  display: block;
+}
+.Maincontent2 .swiper .imgbx img:nth-child(3){
+  width: 140px;
+  height: 110px;
+  display: block;
+}
+.Maincontent2 .swiper-slide {
+  border-right:  1px solid #000;
+  border-left: 1px solid #000;
+  position: relative;
+  background: #fff;
+  width: 720px;
+  height: 1077px;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Maincontent2 .swiper-slide h4{
+  font-family: var(--main-font);
+  color: #000;
+  position: absolute;
+  top: 39px;
+  left: 50px;
+  font-weight:700;
+  font-size:2rem;
+}
+.Maincontent2 .swiper-slide .tt{
+  text-shadow: 6px 6px 6px #0f46dd;
+  position: absolute;
+  top: 25%;
+  z-index: 1;
+  font-size: 30px;
+}
+.Maincontent2 .swiper-slide:nth-child(1){
+  color: #fff;
+  background-size: cover;
+}
+.Maincontent2 .swiper-slide:nth-child(2){
+  color: #fff;
+  background-size: cover;
+}
+.Maincontent2 .swiper-slide:nth-child(3){
+
+  color: #fff;
+  background-size: cover;
+}
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+  position: absolute;
+    top: 3.1rem;
+    transform: translate(190%);
+    width: 250px;
+    height: 50px;
+}
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 6px);
+  width: 15px;
+  height: 15px;
+}
+.swiper-pagination-bullet{
+}
+.swiper-pagination-bullet-active{
+  background-color: var(--sunny-gradient-up);
+}
+.Maincontent2 .swiper .imgbx:nth-of-type(4)
+{
+  height: 200px;
+}
+.Maincontent2 .swiper .btne{
+  font-size: 16px;
+  bottom: 60px;
+  position: absolute;
+  width: 278px;
+  height: 51px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 2px 2px 2px gray;
+}
+.Maincontent2 .swiper .btn_box,
+.Maincontent2 .swiper .btn_box1,
+.Maincontent2 .swiper .btn_box2{
+  font-family: var(--point-font);
+  font-size: 25px;
+  color: #000;
+  position: absolute;
+  right:50px;
+  justify-content: space-between;
+  width: 150px!important;
+  align-items: center;
+  height: 50px;
+  margin-top: 30px;
+}
+.Maincontent2 .swiper .btn1,
+.Maincontent2 .swiper .btn2{
+  background-color: #ffffff;
+  border: none;
+  font-size: 30px;
+  height: 50px;
+  width: 50px;
+}
+

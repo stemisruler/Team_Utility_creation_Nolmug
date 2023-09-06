@@ -72,7 +72,7 @@ function Sidebar(props) {
           } else { 
           const apiKey = process.env.REACT_APP_WEATHER_API_KEY;
           const city = "Daejeon";
-          const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+          const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
       
           axios.get(url)
             .then((response) => {
@@ -129,7 +129,7 @@ function Sidebar(props) {
                 </ul>
                 <ul className='thrUl'>
                     <li>
-                        <Link to=''>여기 좀 괜찮을 '지도'</Link>
+                        <Link to='Sub1'>여기 좀 괜찮을 '지도'</Link>
                     </li>
                     <li>공지사항</li>
                     <li>NOLMUG 활용 꿀팁</li>

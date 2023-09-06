@@ -114,7 +114,7 @@ let list = [
   {
     id: "food_joongu_eunhang_m",
     title: "홍콩구락부",
-    images: generateImagePaths(foodJoongu, "m", 9),
+    images: generateImagePaths(foodJoongu, "m", 8),
     menu: ["동파육", "광동식 갈비 볶음밥", "코코넛 시리얼 새우"],
     categories: ["중구", "중식", "가성비", "해외여행", "TOP9"],
     description: "홍콩에 간듯한 느낌을 주는 식당",

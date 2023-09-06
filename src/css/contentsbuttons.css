@@ -189,7 +189,7 @@
   z-index: 10;
   cursor: pointer;
 }
-
+.detail-view:hover span,
 .detail-view:hover {
   color: var(--sunny-gradient-down);
 }
@@ -236,8 +236,7 @@
 .unselected {
   background-color: #E9E9E9;
 }
-.foodd{
-}
+
 .contentsGrid div{
   width: 200px;
   height: 200px;
