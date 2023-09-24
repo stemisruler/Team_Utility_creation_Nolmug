@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
-import { useUser } from './UserContext';
 
 import {useEffect } from "react";
 import axios from "axios";
@@ -57,35 +56,23 @@ function Sidebar(props) {
     }
 
     const [weatherName, setWeatherName] = useState('');
-     
-        const { activeUser } = useUser(); // UserContext에서 activeUser를 가져옴
-        const [currentTemp, setCurrentTemp] = useState(null);
-        const [icon, setIcon] = useState(null);
-      
-        useEffect(() => {
-          if (activeUser) { // 테스트 유저(a, b, c 중 하나)
-            // activeUser의 정보를 사용하여 날씨를 설정
-            setCurrentTemp(activeUser.currentTemp);
-            setIcon(weatherIcons[activeUser.weather] || defaultIcon);
-        
-            // ... (tempMin과 tempMax도 설정 가능)
-          } else { 
-          const apiKey = process.env.REACT_APP_WEATHER_API_KEY;
-          const city = "Daejeon";
-          const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-      
-          axios.get(url)
-            .then((response) => {
-              setCurrentTemp(Math.round(response.data.main.temp));
-              setIcon(response.data.weather[0].icon);
-              const weatherIconCode = response.data.weather[0].icon;
-              setIcon(weatherIcons[weatherIconCode] || defaultIcon);
-              setWeatherName(weatherNamesInKorean[weatherIconCode] || '정보 없음');
-      
-            })
-            .catch((error) => console.error("에러 발생:", error));
-          }
-        }, [activeUser]);
+    const [currentTemp, setCurrentTemp] = useState(null);
+    const [icon, setIcon] = useState(null);
+
+    useEffect(() => {
+        const apiKey = process.env.REACT_APP_WEATHER_API_KEY;
+        const city = "Daejeon";
+        const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+
+        axios.get(url)
+          .then((response) => {
+            setCurrentTemp(Math.round(response.data.main.temp));
+            const weatherIconCode = response.data.weather[0].icon;
+            setIcon(weatherIcons[weatherIconCode] || defaultIcon);
+            setWeatherName(weatherNamesInKorean[weatherIconCode] || '정보 없음');
+          })
+          .catch((error) => console.error("에러 발생:", error));
+    }, []);
       
 
     return (

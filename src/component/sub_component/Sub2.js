@@ -2,7 +2,7 @@ import React from 'react'
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "../../css/sub_css/sub2.css"
-import './style3.css';
+import './sub_swiper.css';
 import 'swiper/css/navigation';
 
 import Sub_swiper from './Sub_swiper';
