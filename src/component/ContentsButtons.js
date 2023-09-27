@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import '../css/contentsbuttons.css';
 import { data } from './Data'; // Data.js 파일을 import
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 // 매핑 객체 추가
 const categoryMapping = {
@@ -13,35 +13,35 @@ const categoryMapping = {
   "#술이최고지": "술",
   "#분위기좀있네": "감성",
   "#음식으로해외여행": "해외여행",
-  "#인스타사진맛집" : "힙해",
+  "#인스타사진맛집": "힙해",
 
   //카페(디저트)에 해당하는 매핑 카테고리 
   //<식물, 모던한, 술도 파는, 힙해, 가성비, 넓은, 아담한, 우드톤, 여행느낌, 빵 >
-  "#카페로해외여행" : "여행느낌",
-  "#초록초록해" : "식물",
-  "#예술적이야!" : "힙해",
-  "#모던함" : "모던한",
-  "#널찍하니좋네" : "넓은",
-  "#작지만조용해" : "아담한",
-  "#나무야햇빛가려줘!" : "우드톤",
-  "#비올땐.." :"술도 파는",
+  "#카페로해외여행": "여행느낌",
+  "#초록초록해": "식물",
+  "#예술적이야!": "힙해",
+  "#모던함": "모던한",
+  "#널찍하니좋네": "넓은",
+  "#작지만조용해": "아담한",
+  "#나무야햇빛가려줘!": "우드톤",
+  "#비올땐..": "술도 파는",
 
   //관광명소에 해당하는 매핑 카테고리
   //야외, 실내, 스포츠, 자연, 대피(더울 때나 비올 때 스페셜 버튼으로 보여줄 것), 야경, 공원, 자연, 예술
-  "#이색적인 재미" : "예술",
-  "#너무더워!" : "대피",
-  "#비가싫어" : "대피",
-  "#나는자연인이다" : "자연",
-  "#걷기좋아" : "공원",
-  "#야경맛집" : "야경",
-  "#응원가부를래?" : "스포츠",
+  "#이색적인 재미": "예술",
+  "#너무더워!": "대피",
+  "#비가싫어": "대피",
+  "#나는자연인이다": "자연",
+  "#걷기좋아": "공원",
+  "#야경맛집": "야경",
+  "#응원가부를래?": "스포츠",
 
 };
 
 const ContentsButtons = () => {
 
   const [activeTab, setActiveTab] = useState('음식');
-  const [subCategories, setSubCategories] = useState(['#NOLMUG 강추','#밥이좋아', '#술이최고지', '#분위기좀있네','#음식으로해외여행', '#인스타사진맛집']);
+  const [subCategories, setSubCategories] = useState(['#NOLMUG 강추', '#밥이좋아', '#술이최고지', '#분위기좀있네', '#음식으로해외여행', '#인스타사진맛집']);
   const [selectedCategories, setSelectedCategories] = useState(['#NOLMUG 강추']);
   let filteredData = data.list;
 
@@ -65,31 +65,31 @@ const ContentsButtons = () => {
     filteredData = filteredData.filter(item => item.categories.includes('TOP9'));
   } else {
     // 매핑 객체를 참조하여 필터링, '#을 뺄 필요 없음'
-    filteredData = filteredData.filter(item => 
-      selectedCategories.every(category => 
+    filteredData = filteredData.filter(item =>
+      selectedCategories.every(category =>
         item.categories.includes(categoryMapping[category] || category)
       )
     );
   }
-  
+
   const handleClick = (tabName) => {
     setActiveTab(tabName);
     let newSubCategories = [];
 
     switch (tabName) {
       case '음식':
-        newSubCategories = ['#NOLMUG 강추','#밥이좋아', '#술이최고지', '#분위기좀있네','#음식으로해외여행', '#인스타사진맛집'];
+        newSubCategories = ['#NOLMUG 강추', '#밥이좋아', '#술이최고지', '#분위기좀있네', '#음식으로해외여행', '#인스타사진맛집'];
         break;
       case '카페/디저트':
-        newSubCategories = ['#NOLMUG 강추','#카페로해외여행', '#초록초록해', '#예술적이야!', '#모던함','#널찍하니좋네'];
+        newSubCategories = ['#NOLMUG 강추', '#카페로해외여행', '#초록초록해', '#예술적이야!', '#모던함', '#널찍하니좋네'];
         break;
       case '핫플레이스':
-        newSubCategories = ['#NOLMUG 강추','#이색적인 재미', '#나는자연인이다', '#걷기좋아','#야경맛집','#응원가부를래?'];
+        newSubCategories = ['#NOLMUG 강추', '#이색적인 재미', '#나는자연인이다', '#걷기좋아', '#야경맛집', '#응원가부를래?'];
         break;
       default:
         break;
     }
-    
+
     // 새로운 서브 카테고리 설정
     setSubCategories(newSubCategories);
 
@@ -137,7 +137,7 @@ const ContentsButtons = () => {
         closePopup();
       }
     };
-  
+
     if (isPopupOpen) {
       document.addEventListener('mousedown', handleClickOutside);
     } else {
@@ -147,7 +147,7 @@ const ContentsButtons = () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
   }, [isPopupOpen]);
-  
+
   // 좌우 화살표 클릭 이벤트
   const prevImage = () => {
     const newIndex = (currentImageIndex - 1 + currentImageArray.length) % currentImageArray.length;
@@ -160,9 +160,9 @@ const ContentsButtons = () => {
   };
 
   const slicedFilteredData = filteredData.slice(0, 9);  // 처음 9개의 데이터만 선택
-    
+
   return (
-    <section className='contentsButtons' style={{ border : '1px solid black'}}>
+    <section className='contentsButtons' style={{ borderTop: '1px solid #E9E9E9', borderBottom: '1px solid #E9E9E9' }}>
       <div className='contentsTop'>
         <h4
           onClick={(e) => handleClick('음식')}
@@ -186,63 +186,63 @@ const ContentsButtons = () => {
 
       </div>
       <div className='contentsBottom'>
-          {subCategories.map((category, index) => (
-      <button 
-        key={index} 
-        onClick={() => handleCategoryClick(category)}
-        className={selectedCategories.includes(category) ? 'selected' : 'unselected'}
-        style={{
-          backgroundColor: selectedCategories.includes(category) ? 'red' : '#E9E9E9',
-          cursor: 'pointer'
-        }}
-        >
-    {category}
-      </button>
-    ))}
+        {subCategories.map((category, index) => (
+          <button
+            key={index}
+            onClick={() => handleCategoryClick(category)}
+            className={selectedCategories.includes(category) ? 'selected' : 'unselected'}
+            style={{
+              backgroundColor: selectedCategories.includes(category) ? 'red' : '#E9E9E9',
+              cursor: 'pointer'
+            }}
+          >
+            {category}
+          </button>
+        ))}
       </div>
       <div className='concon_box'>
-      <div className='ContentsTextBox'> 
-        <h2>NOLUMUG BEST</h2>
-      </div>
-      <div className='contentsGrid'>
-        {slicedFilteredData.map((item) => (
-          <div key={item.id} style={{cursor:'pointer'}}>
-            {/* 모든 경우에서 첫 번째 이미지만 출력 */}
-            <img src={item.images[0]} alt={item.title}
-            onClick={() => openPopup(item.images, 0)}  // 여기 수정
-  />
-  <span className='item_box'>
+        <div className='ContentsTextBox'>
+          <h2>NOLUMUG BEST</h2>
+        </div>
+        <div className='contentsGrid'>
+          {slicedFilteredData.map((item) => (
+            <div key={item.id} style={{ cursor: 'pointer' }}>
+              {/* 모든 경우에서 첫 번째 이미지만 출력 */}
+              <img src={item.images[0]} alt={item.title}
+                onClick={() => openPopup(item.images, 0)}  // 여기 수정
+              />
+              <span className='item_box'>
 
-  </span>
-  <div className='item' onClick={() => openPopup(item.images, 0)}>
- <p>{item.title}</p>
-   <p>{item.menu?.[0]}</p>
-    <p>{item.description}</p>
- </div>
-          </div>
-        ))}
-  
-      </div>
-                  {/* 팝업 창 */}
-                  {isPopupOpen && (
-        <div className="popup" ref={popupRef}>
-              <div className='prev_box'  onClick={(e) => { prevImage(); e.stopPropagation(); }}><img src="/prev.png" alt="Prev" className="prev-btn" /></div>
-              <div className='next_box' onClick={(e) => { nextImage(); e.stopPropagation(); }}>
-              <img src="/next.png" alt="Next" className="next-btn"  />
+              </span>
+              <div className='item' onClick={() => openPopup(item.images, 0)}>
+                <p>{item.title}</p>
+                <p>{item.menu?.[0]}</p>
+                <p>{item.description}</p>
               </div>
-          <img src={currentImageArray[currentImageIndex]} alt="popup" className="popupImage" />
+            </div>
+          ))}
+
+        </div>
+        {/* 팝업 창 */}
+        {isPopupOpen && (
+          <div className="popup" ref={popupRef}>
+            <div className='prev_box' onClick={(e) => { prevImage(); e.stopPropagation(); }}><img src="/prev.png" alt="Prev" className="prev-btn" /></div>
+            <div className='next_box' onClick={(e) => { nextImage(); e.stopPropagation(); }}>
+              <img src="/next.png" alt="Next" className="next-btn" />
+            </div>
+            <img src={currentImageArray[currentImageIndex]} alt="popup" className="popupImage" />
 
             {/* 자세히보기 및 airplane.png */}
-          <div className="detail-view">
-            <Link to="Sub2"><span>자세히보기</span></Link>
-            <img src="./img/airplane.png" alt="Airplane" />
+            <div className="detail-view">
+              <Link to="Sub2"><span>자세히보기</span></Link>
+              <img src="./img/airplane.png" alt="Airplane" />
+            </div>
           </div>
-        </div>
-      )}
-</div>
+        )}
+      </div>
     </section>
   );
-  
+
 };
 
 export default ContentsButtons;

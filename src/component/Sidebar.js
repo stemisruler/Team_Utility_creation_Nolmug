@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
-import {useEffect } from "react";
+import { useEffect } from "react";
 import axios from "axios";
 import defaultIcon from '../icons/clear-sky.png'
 import clearSky from '../icons/clear-sky.png';
@@ -26,9 +26,9 @@ const weatherIcons = {
     '09n': rain,
     '10d': rain, // 가벼운 비와 비의 아이콘이 같은 경우
     '10n': rain, // 가벼운 비와 비의 아이콘이 같은 경우
-  };
+};
 
- const weatherNamesInKorean = {
+const weatherNamesInKorean = {
     '01d': '맑음',
     '01n': '맑음(밤)',
     '02d': '구름 조금',
@@ -65,15 +65,15 @@ function Sidebar(props) {
         const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
         axios.get(url)
-          .then((response) => {
-            setCurrentTemp(Math.round(response.data.main.temp));
-            const weatherIconCode = response.data.weather[0].icon;
-            setIcon(weatherIcons[weatherIconCode] || defaultIcon);
-            setWeatherName(weatherNamesInKorean[weatherIconCode] || '정보 없음');
-          })
-          .catch((error) => console.error("에러 발생:", error));
+            .then((response) => {
+                setCurrentTemp(Math.round(response.data.main.temp));
+                const weatherIconCode = response.data.weather[0].icon;
+                setIcon(weatherIcons[weatherIconCode] || defaultIcon);
+                setWeatherName(weatherNamesInKorean[weatherIconCode] || '정보 없음');
+            })
+            .catch((error) => console.error("에러 발생:", error));
     }, []);
-      
+
 
     return (
         <section className={`gnb ${props.classStatus ? 'on' : ''}`}>
@@ -86,7 +86,7 @@ function Sidebar(props) {
                 <hr />
                 <ul className='secUl'>
                     <li className='food' onClick={accon}>음식
-                        <img src='./img/아코디언 화살표.png' />
+                        <img src='./img/아코디언 화살표.png' alt='아코디언 화살표' />
                     </li>
                     {acco &&
                         <ul className='foodUl' style={{
@@ -99,7 +99,7 @@ function Sidebar(props) {
                         </ul>
                     }
                     <li className='cafe' onClick={accon2}>카페
-                        <img src='./img/아코디언 화살표.png' />
+                        <img src='./img/아코디언 화살표.png' alt='아코디언 화살표' />
                     </li>
                     {acco2 &&
                         <ul className='cafeUl' style={{
@@ -125,7 +125,7 @@ function Sidebar(props) {
                 </ul>
                 <ul className='forUl'>
                     <li>
-                    <img src={icon} style={{width:'40px', height:'40px'}}/>
+                        <img src={icon} style={{ width: '40px', height: '40px' }} alt='날짜 아이콘' />
                     </li>
                     <li>{`${weatherName}`}</li>
                     <li>{`${currentTemp}°C`}</li>

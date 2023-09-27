@@ -263,7 +263,7 @@ hr {
 .info1 .infoText .textt{
   display: flex;
   color: #fff;
-  justify-content: start;
+  justify-content: flex-start;
   height: 90px;
   padding-top: 60px;
   align-items: center;
@@ -288,9 +288,6 @@ hr {
   justify-content: center;
   font-size: 32px;
 }
-.info3{
-}
-
 .info3 p{
   margin: 0 50px;
   font-size: 36px;
@@ -353,7 +350,7 @@ hr {
   font-size: 26px;
   font-weight: 600;
 }
-.review .blog a p:nth-child(3){}
+
 .blog{
   padding-top: 55px;
   width: 100%;

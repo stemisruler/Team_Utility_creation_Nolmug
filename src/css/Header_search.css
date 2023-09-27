@@ -1,8 +1,8 @@
 /* search */
 .search_h{
   background-color: #fff;
-  border-right: 1px solid #000;
-  border-left: 1px solid #000;
+  border-right: 1px none #000;
+  border-left: 1px none #000;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -16,6 +16,7 @@
     padding-left: 2rem;
   }
   .searchItem{
+    display: none;
     position: relative;
     width: 341px;
     height: 57px;
@@ -39,4 +40,11 @@
       top: 28%;
       width: 25px;
       height: 25px;
+  }
+
+    
+  @media (max-width: 750px) {
+    .searchItem{
+      display: block;
+    }
   }

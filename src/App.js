@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import './css/reset.css';
 import WeatherHeader from './component/WeatherHeader';
-import HeaderSearch from './HeaderSearch';
+import HeaderSearch from './component/HeaderSearch';
 import Main from './component/Main';
-import MainVisual from './MainVisual';
-import Maincontent2 from './Maincontent2';
+import MainVisual from './component/MainVisual';
+import Maincontent2 from './component/Maincontent2';
 import ContentsButtons from './component/ContentsButtons';
 
 import Sidebar from './component/Sidebar';

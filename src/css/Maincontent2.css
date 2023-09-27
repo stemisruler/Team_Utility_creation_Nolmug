@@ -114,8 +114,8 @@ body {
   display: block;
 }
 .Maincontent2 .swiper-slide {
-  border-right:  1px solid #000;
-  border-left: 1px solid #000;
+  border-right:  1px none #E9E9E9;
+  border-left: 1px none #E9E9E9;
   position: relative;
   background: #fff;
   width: 720px;
@@ -166,8 +166,7 @@ body {
   width: 15px;
   height: 15px;
 }
-.swiper-pagination-bullet{
-}
+
 .swiper-pagination-bullet-active{
   background-color: var(--sunny-gradient-up);
 }
@@ -185,9 +184,13 @@ body {
   border-radius: 10px;
   background-color: #fff;
   box-shadow: 2px 2px 2px gray;
+  cursor: pointer;
 }
-.translated {
+
+.Maincontent2 .swiper .btne:active {
+  background-color: #e6e6e6;
 }
+
 .Maincontent2 .swiper .btn_box,
 .Maincontent2 .swiper .btn_box1,
 .Maincontent2 .swiper .btn_box2{
@@ -209,5 +212,6 @@ body {
   font-size: 30px;
   height: 50px;
   width: 50px;
+  cursor: pointer;
 }
 

@@ -1,6 +1,5 @@
-import React, { useState, useEffect, useCallback} from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { data } from '../../component/Data';
-import {Link} from 'react-router-dom';
 import KakaoMap from './KakaoMap';
 import '../../css/sub_css/sub1.css'
 import SubHeader from './SubHeader';
@@ -36,24 +35,24 @@ function Sub1() {
 
     return (
         <>
-        <SubHeader />
-        <div className="container">
-            <div className="restaurant-container">
-                {list.slice(0, visibleItems).map(item => (
-                    <div key={item.id} className="restaurant">
-                        <img src={item.images[0]} alt='대표이미지'/>
-                        <div className="details">
-                            <h2>{item.title}</h2>
-                            <p>{item.menu ? item.menu.join(', ') : ''}</p>
-                            <p className="description">{item.description}</p>
+            <SubHeader />
+            <div className="container">
+                <div className="restaurant-container">
+                    {list.slice(0, visibleItems).map(item => (
+                        <div key={item.id} className="restaurant">
+                            <img src={item.images[0]} alt='대표이미지' />
+                            <div className="details">
+                                <h2>{item.title}</h2>
+                                <p>{item.menu ? item.menu.join(', ') : ''}</p>
+                                <p className="description">{item.description}</p>
+                            </div>
                         </div>
-                    </div>
-                ))}
+                    ))}
+                </div>
+                <div className='mapping' style={{ backgroundImage: `url(./map.png)` }}>
+                    <KakaoMap />
+                </div>
             </div>
-            <div className='mapping' style={{ backgroundImage: `url(./map.png)`}}>
-                <KakaoMap />
-            </div>
-        </div>
         </>
     );
 }
