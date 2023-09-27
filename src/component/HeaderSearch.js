@@ -1,7 +1,7 @@
 import React from 'react'
 import '../css/Header_search.css'
 
-function Header() {
+function HeaderSearch() {
   return (
     <section className='search_h'>
       <h1>NOLMUG</h1>
@@ -13,4 +13,4 @@ function Header() {
   )
 }
 
-export default Header
+export default HeaderSearch

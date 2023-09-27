@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { Provider } from 'react-redux';
+import store from './store';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import './css/reset.css';
@@ -22,31 +24,33 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <BrowserRouter>
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <>
-                <Main />
-                <div className="bodyWrap">
-                  <WeatherHeader isOn={isRendering} />
-                  <HeaderSearch />
-                  <MainVisual />
-                  <ContentsButtons />
-                  <Maincontent2 />
-                  <Footer isOn={isRendering} />
-                </div>
-                <Sidebar classStatus={renderStatus} />
-              </>
-            }
-          />
-          <Route path="/sub1" element={<Sub1 />} />
-          <Route path="/sub2" element={<Sub2 />} />
-        </Routes>
-      </BrowserRouter>
-    </div>
+    <Provider store={store}>
+      <div className="App">
+        <BrowserRouter>
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <>
+                  <Main />
+                  <div className="bodyWrap">
+                    <WeatherHeader isOn={isRendering} />
+                    <HeaderSearch />
+                    <MainVisual />
+                    <ContentsButtons />
+                    <Maincontent2 />
+                    <Footer isOn={isRendering} />
+                  </div>
+                  <Sidebar classStatus={renderStatus} />
+                </>
+              }
+            />
+            <Route path="/sub1" element={<Sub1 />} />
+            <Route path="/sub2" element={<Sub2 />} />
+          </Routes>
+        </BrowserRouter>
+      </div>
+    </Provider>
   );
 }
 

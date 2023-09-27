@@ -1,10 +1,10 @@
 import React from 'react'
-import { useEffect,useState } from 'react';
+import { useState } from 'react';
 import '../css/reset.css';
 import WeatherHeader from './WeatherHeader';
-import Header_search from '../Header_search';
+import HeaderSearch from '../HeaderSearch';
 import Main from './Main'
-import MainVisual  from './MainVisual ';
+import MainVisual from './MainVisual ';
 import Maincontent2 from '../Maincontent2';
 import ContentsButtons from './ContentsButtons';
 
@@ -13,20 +13,20 @@ import Footer from './Footer'
 
 
 function Home() {
-const [renderStatus, setRenderStatus] = useState(false);
+  const [renderStatus, setRenderStatus] = useState(false);
 
-const isRendering = () => {
-  setRenderStatus(!renderStatus);
-}
+  const isRendering = () => {
+    setRenderStatus(!renderStatus);
+  }
   return (
     <div className='home'>
-           <Main />
-       <div className='bodyWrap'>
+      <Main />
+      <div className='bodyWrap'>
         <WeatherHeader isOn={isRendering} />
-        <Header_search/>
+        <HeaderSearch />
         <MainVisual />
         <ContentsButtons />
-        <Maincontent2/>
+        <Maincontent2 />
         <Footer isOn={isRendering} />
       </div>
       <Sidebar classStatus={renderStatus} />

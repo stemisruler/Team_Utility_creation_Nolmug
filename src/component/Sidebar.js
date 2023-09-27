@@ -1,48 +1,7 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
-
-import { useEffect } from "react";
-import axios from "axios";
-import defaultIcon from '../icons/clear-sky.png'
-import clearSky from '../icons/clear-sky.png';
-import clearSkyNight from '../icons/clear-sky-night.png';
-import fewClouds from '../icons/few-clouds.png';
-import fewCloudsNight from '../icons/few-clouds-night.png';
-import clouds from '../icons/clouds.png';
-import rain from '../icons/rain.png';
-
-
-const weatherIcons = {
-    '01d': clearSky,
-    '01n': clearSkyNight,
-    '02d': fewClouds,
-    '02n': fewCloudsNight,
-    '03d': fewClouds, //mostlyClouds
-    '03n': fewCloudsNight, //mostlyCloudsNight
-    '04d': clouds,
-    '04n': clouds,
-    '09d': rain,
-    '09n': rain,
-    '10d': rain, // 가벼운 비와 비의 아이콘이 같은 경우
-    '10n': rain, // 가벼운 비와 비의 아이콘이 같은 경우
-};
-
-const weatherNamesInKorean = {
-    '01d': '맑음',
-    '01n': '맑음(밤)',
-    '02d': '구름 조금',
-    '02n': '구름 조금(밤)',
-    '03d': '구름 많음',
-    '03n': '구름 많음(밤)',
-    '04d': '흐림',
-    '04n': '흐림(밤)',
-    '09d': '비',
-    '09n': '비(밤)',
-    '10d': '가벼운 비',
-    '10n': '가벼운 비(밤)'
-};
-
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchWeather } from '../thunks/weatherThunks';
 
 function Sidebar(props) {
     const [acco, setAcco] = useState(false);
@@ -55,24 +14,13 @@ function Sidebar(props) {
         setAcco2(!acco2);
     }
 
-    const [weatherName, setWeatherName] = useState('');
-    const [currentTemp, setCurrentTemp] = useState(null);
-    const [icon, setIcon] = useState(null);
+    /* redux-thunk 이용 날씨 정보 뿌리기 */
+    const dispatch = useDispatch();
+    const { currentTemp, icon, weatherName } = useSelector(state => state.weather);
 
     useEffect(() => {
-        const apiKey = process.env.REACT_APP_WEATHER_API_KEY;
-        const city = "Daejeon";
-        const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-
-        axios.get(url)
-            .then((response) => {
-                setCurrentTemp(Math.round(response.data.main.temp));
-                const weatherIconCode = response.data.weather[0].icon;
-                setIcon(weatherIcons[weatherIconCode] || defaultIcon);
-                setWeatherName(weatherNamesInKorean[weatherIconCode] || '정보 없음');
-            })
-            .catch((error) => console.error("에러 발생:", error));
-    }, []);
+        dispatch(fetchWeather());
+    }, [dispatch]);
 
 
     return (
