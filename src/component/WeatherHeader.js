@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchWeather } from '../thunks/weatherThunks';
+import { setCurrentTemp, setWeatherName } from "../actions/weatherActions";
 import person from '../icons/person.png';
 
 import '../css/weatherHeader.css'
@@ -12,6 +13,22 @@ function WeatherHeader(props) {
 
   useEffect(() => {
     dispatch(fetchWeather("Daejeon"));
+
+    const handleKeyDown = (e) => {
+      if (e.key === 'q') {
+        dispatch(setCurrentTemp(35));
+      }
+      if (e.key === 'w') {
+        dispatch(setWeatherName('비'));
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+
   }, [dispatch]);
 
   const { isOn } = props;

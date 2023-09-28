@@ -28,7 +28,7 @@ let list = [
     title: "라스트춘선",
     images: generateImagePaths(foodJoongu, "b", 8),
     menu: ["한우 모츠나베", "정춘선 샤브나베", "육회 김밥"],
-    categories: ["중구", "술", "힙해", "감성", "TOP9"],
+    categories: ["중구", "술", "힙해", "감성", "TOP9","시원"],
     description: "한우 모츠나베(대창 전골)가 유명한 퓨전음식 술집",
   },
   {
@@ -36,7 +36,7 @@ let list = [
     title: "무명",
     images: generateImagePaths(foodJoongu, "c", 7),
     menu: ["모듬숙성회", "백명란구이", "바지락술찜"],
-    categories: ["중구", "일식", "해산물", "TOP9"],
+    categories: ["중구", "일식", "해산물", "TOP9","시원","비"],
     description: "숙성회와 전통주가 있는 대흥동 이자카야",
   },
   {
@@ -76,7 +76,7 @@ let list = [
     title: "열개의 테이블",
     images: generateImagePaths(foodJoongu, "h", 5),
     menu: ["수란 통베이컨 크림 파스타", "치즈 플레이트", "진토닉"],
-    categories: ["중구", "양식", "감성","술", "TOP9"],
+    categories: ["중구", "양식", "감성","술", "TOP9","비"],
     description: "양식과 술을 같이 즐길 수 있는 분위기 좋은 식당",
   },
   {
@@ -92,7 +92,7 @@ let list = [
     title: "진로집",
     images: generateImagePaths(foodJoongu, "j", 6),
     menu: ["두부두루치기", "두부전", "두부김치전"],
-    categories: ["중구", "술", "고기"],
+    categories: ["중구", "술", "고기","비"],
     description: "두부에 미친 사장님의 손맛이 느껴지는 음식점",
   },
   {
@@ -108,7 +108,7 @@ let list = [
     title: "피그로",
     images: generateImagePaths(foodJoongu, "l", 8),
     menu: ["(점심)에그베네딕트", "(저녁)수비드항정살스테이크", "하이볼"],
-    categories: ["중구", "양식", "술", "TOP9"],
+    categories: ["중구", "양식", "술", "TOP9","비"],
     description: "고급스러운 양식과 와인이 좋은 곳이지만 엄마 카드를 쓰면 불효자가 되기 쉬운 곳",
   },
   {
@@ -116,7 +116,7 @@ let list = [
     title: "홍콩구락부",
     images: generateImagePaths(foodJoongu, "m", 8),
     menu: ["동파육", "광동식 갈비 볶음밥", "코코넛 시리얼 새우"],
-    categories: ["중구", "중식", "가성비", "해외여행", "TOP9"],
+    categories: ["중구", "중식", "가성비", "해외여행", "TOP9","비"],
     description: "홍콩에 간듯한 느낌을 주는 식당",
   },
   {
@@ -124,7 +124,7 @@ let list = [
     title: "희희초밥",
     images: generateImagePaths(foodJoongu, "n", 7),
     menu: ["희초밥", "희희초밥", "연어초밥"],
-    categories: ["중구", "일식", "TOP9"],
+    categories: ["중구", "일식", "TOP9","시원"],
     description: "먹을 때도 나갈 때도 희희 웃게되는 초밥집",
   },
 
@@ -134,7 +134,7 @@ let list = [
     title: "DAON",
     images: generateImagePaths(foodSeogu, "a", 6),
     menu: ["다온 모듬꼬치", "마약옥수수", "왕 파닭꼬치"],
-    categories: ["서구", "술", "TOP9"],
+    categories: ["서구", "술", "TOP9","비"],
     description: "꼬치류가 레전드인 술집",
   },
   {
@@ -150,7 +150,7 @@ let list = [
     title: "모토이시",
     images: generateImagePaths(foodSeogu, "c", 7),
     menu: ["모츠나베", "일본식대창전골", "업진살"],
-    categories: ["서구", "일식", "해외여행", "감성", "TOP9"],
+    categories: ["서구", "일식", "해외여행", "감성", "TOP9","비"],
     description: "일본식 와규(소고기)화로구이점",
   },
   {
@@ -166,7 +166,7 @@ let list = [
     title: "묵은정",
     images: generateImagePaths(foodSeogu, "e", 6),
     menu: ["묵은지 갈비찌개", "우순대국", "모듬순대"],
-    categories: ["서구", "밥", "가성비"],
+    categories: ["서구", "밥", "가성비","비"],
     description: "갈비와 김치의 아름다운 조화를 만들다",
   },
   {
@@ -174,7 +174,7 @@ let list = [
     title: "백소정",
     images: generateImagePaths(foodSeogu, "f", 5),
     menu: ["돈카츠", "마제소바", "냉소바"],
-    categories: ["서구", "일식", "TOP9"],
+    categories: ["서구", "일식", "TOP9","시원"],
     description: "메뉴가 알찬 한상차림의 돈카츠 소바집",
   },
   {
@@ -182,7 +182,7 @@ let list = [
     title: "셰셰",
     images: generateImagePaths(foodSeogu, "g", 7),
     menu: ["한우 대창나베", "얼큰 고기짬뽕탕", "유린기"],
-    categories: ["서구", "중식", "해외여행", "감성"],
+    categories: ["서구", "중식", "해외여행", "감성","비"],
     description: "홍콩의 밤거리와 맛을 그대로 재현한 음식점",
   },
   {
@@ -198,7 +198,7 @@ let list = [
     title: "연남",
     images: generateImagePaths(foodSeogu, "i", 7),
     menu: ["샤브전골", "육사시미", "하이볼"],
-    categories: ["서구", "술","감성", "일식", "TOP9"],
+    categories: ["서구", "술","감성", "일식", "TOP9","비","시원"],
     description: "한 쪽 벽에 영화가 나오는 조용하고 감성적인 분위기의 일식 술집",
   },
   {
@@ -206,7 +206,7 @@ let list = [
     title: "용용선생",
     images: generateImagePaths(foodSeogu, "j", 9),
     menu: ["화산마라전골", "홍콩덕냉채", "우육탕"],
-    categories: ["서구", "술", "중식", "해외여행","감성","힙해", "TOP9"],
+    categories: ["서구", "술", "중식", "해외여행","감성","힙해", "TOP9","비"],
     description: "화산처럼 생긴 마라전골이 유명한 홍콩 분위기의 맛집",
   },
   {
@@ -230,7 +230,7 @@ let list = [
     title: "택이네 조개전골",
     images: generateImagePaths(foodSeogu, "m", 5),
     menu: ["조개전골", "조개칼국수", "해물삼함"],
-    categories: ["서구", "한식", "술","해산물"],
+    categories: ["서구", "한식", "술","해산물","비"],
     description: "싱싱한 조개가 연안 부두의 배처럼 입안에서 날뛴다",
   },
   {
@@ -248,7 +248,7 @@ let list = [
     title: "1984 술마시는 작업실",
     images: generateImagePaths(foodYuseong, "a", 6),
     menu: ["봉골레 파스타", "BBQ플래터", "감바스"],
-    categories: ["유성", "양식","술","감성","힙해", "TOP9"],
+    categories: ["유성", "양식","술","감성","힙해", "TOP9","비"],
     description: "고급스러운 인테리어에 버금가는 맛의 양식과 맥주가 있는 곳",
   },
   {
@@ -256,7 +256,7 @@ let list = [
     title: "거리꼬치구이",
     images: generateImagePaths(foodYuseong, "b", 9),
     menu: ["꼬치구이"],
-    categories: ["유성", "술","고기", "TOP9"],
+    categories: ["유성", "술","고기", "TOP9","비"],
     description: "꼬치꼬치 묻지 않아도 직접 구워 맛있어 보이는 꼬치집",
   },
   {
@@ -280,7 +280,7 @@ let list = [
     title: "금별맥주",
     images: generateImagePaths(foodYuseong, "e", 4),
     menu: ["백합조개 버터술찜", "사모님! 감바스", "뚝배기 골뱅이 메밀 비빔국수"],
-    categories: ["유성", "술","감성","힙해"],
+    categories: ["유성", "술","감성","힙해","시원"],
     description: "사모님! 감바스는 대체 무슨 맛일까?",
   },
   {
@@ -312,7 +312,7 @@ let list = [
     title: "오사카데스",
     images: generateImagePaths(foodYuseong, "i", 5),
     menu: ["나폴리탄 스파게티", "오꼬노미야끼", "3종 모듬회"],
-    categories: ["유성", "해외여행","일식","술","힙해", "해산물", "TOP9"],
+    categories: ["유성", "해외여행","일식","술","힙해", "해산물", "TOP9","비"],
     description: "일본 현지 느낌을 느낄 수 있는 트랜디한 술집",
   },
   {
@@ -328,7 +328,7 @@ let list = [
     title: "파도수산",
     images: generateImagePaths(foodYuseong, "k", 5),
     menu: ["파도해물라면", "3종모듬회", "해물짬뽕탕"],
-    categories: ["유성", "술","해산물"],
+    categories: ["유성", "술","해산물","비","시원"],
     description: "해물에 라면에 소주 그리고 물회",
   },
   {
@@ -344,7 +344,7 @@ let list = [
     title: "호맥",
     images: generateImagePaths(foodYuseong, "m", 5),
     menu: ["앙설탕 호떡", "초코 마카다미아 호떡", "(생맥주)두근두근 IPA"],
-    categories: ["유성", "술", "힙해", "TOP9"],
+    categories: ["유성", "술", "힙해", "TOP9","시원"],
     description: "호떡 맥주의 신선한 조합! 무알콜 음료도 있음",
   },
   {
@@ -352,7 +352,7 @@ let list = [
     title: "호연재",
     images: generateImagePaths(foodYuseong, "n", 5),
     menu: ["계룡산 모둠 한판", "해물 순두부 찌개", "하이볼 100잔 무한리필"],
-    categories: ["유성", "술", "고기", "해산물", "TOP9"],
+    categories: ["유성", "술", "고기", "해산물", "TOP9","시원"],
     description: "숯불 닭구이부터 해물순두부찌개까지 맥주에 곁들여 먹을 수 있는 곳",
   },
 
@@ -363,7 +363,7 @@ let list = [
     title: "디버전",
     images: generateImagePaths(cafeJoongu, "a", 6),
     menu: ["슈크림라떼", "달고나라떼", "코로플"],
-    categories: ["중구", "힙해","모던한","TOP9"],
+    categories: ["중구", "힙해","모던한","TOP9","촉촉한"],
     description: "건물 한 부분이 잘린듯한 독특한 외관, 카페&칵테일&맥주",
   },
   {
@@ -379,7 +379,7 @@ let list = [
     title: "라이커블",
     images: generateImagePaths(cafeJoongu, "c", 5),
     menu: ["단호박샌드위치", "청포도케일주스", "수제바닐라라떼"],
-    categories: ["중구", "가성비", "식물"],
+    categories: ["중구", "가성비", "식물","촉촉한"],
     description: "식물을 함께 판매하는 플렌테리어 카페",
   },
   {
@@ -427,7 +427,7 @@ let list = [
     title: "올드하우스",
     images: generateImagePaths(cafeJoongu, "i", 6),
     menu: ["하우스커피", "말차슈페너", "발로나초코슈페너"],
-    categories: ["중구", "모던한","TOP9"],
+    categories: ["중구", "모던한","TOP9","촉촉한"],
     description: "오래된 건물의 모던한 인테리어가 돋보이는 곳",
   },
   {
@@ -435,7 +435,7 @@ let list = [
     title: "원더풀",
     images: generateImagePaths(cafeJoongu, "j", 4),
     menu: ["딸기크림라떼", "애플망고패션후르츠에이드", "레몬에이드"],
-    categories: ["중구", "힙해","TOP9"],
+    categories: ["중구", "힙해","TOP9","촉촉한"],
     description: "미디어아트로 이색적인 카페",
   },
   {
@@ -467,7 +467,7 @@ let list = [
     title: "홀리우드",
     images: generateImagePaths(cafeJoongu, "n", 4),
     menu: ["", "", ""],
-    categories: ["중구", "우드톤","술도 파는"],
+    categories: ["중구", "우드톤","술도 파는","촉촉한"],
     description: "",
   },
 
@@ -477,7 +477,7 @@ let list = [
     title: "SSAW",
     images: generateImagePaths(cafeSeogu, "a", 6),
     menu: ["바닐라빈라떼", "플랫화이트", "콜드브루아인슈페너"],
-    categories: ["서구", "모던한", "깔끔한","TOP9"],
+    categories: ["서구", "모던한", "깔끔한","TOP9","촉촉한"],
     description: "깔끔하고 감각적인 분위기인 카페",
   },
   {
@@ -485,7 +485,7 @@ let list = [
     title: "게리동서비스",
     images: generateImagePaths(cafeSeogu, "b", 8),
     menu: ["커널라떼", "까망베르크루와상", "플랫 화이트"],
-    categories: ["서구", "우드톤", "힙해","TOP9"],
+    categories: ["서구", "우드톤", "힙해","TOP9","촉촉한"],
     description: "우드톤의 LP 카페",
   },
   {
@@ -493,7 +493,7 @@ let list = [
     title: "랑데자뷰",
     images: generateImagePaths(cafeSeogu, "c", 7),
     menu: ["바닐라라떼", "밀크티", "자몽주스"],
-    categories: ["서구", "힙해", "여행느낌","TOP9"],
+    categories: ["서구", "힙해", "여행느낌","TOP9","촉촉한"],
     description: "제주 자연의 느낌을 담은 감성 카페",
   },
   {
@@ -501,7 +501,7 @@ let list = [
     title: "리셉션",
     images: generateImagePaths(cafeSeogu, "d", 4),
     menu: ["잠봉뵈르", "크루와상샌드위치", "크렘당쥬"],
-    categories: ["서구", "우드톤"],
+    categories: ["서구", "우드톤","촉촉한"],
     description: "빈티지스러우면서 트렌디한 카페",
   },
   {
@@ -517,7 +517,7 @@ let list = [
     title: "숍비피",
     images: generateImagePaths(cafeSeogu, "f", 5),
     menu: ["프렌치 토스트", "너츠라떼", "바나나 머쉬룸 밀크티"],
-    categories: ["서구", "모던한"],
+    categories: ["서구", "모던한","촉촉한"],
     description: "트리뷰가 좋은 감성 카페",
   },
   {
@@ -525,7 +525,7 @@ let list = [
     title: "슬리피타운",
     images: generateImagePaths(cafeSeogu, "g", 8),
     menu: ["슬리피라떼", "아이스크림 샌드위치", "마리아쥬 웨딩 임페리얼 티"],
-    categories: ["서구", "우드톤","TOP9"],
+    categories: ["서구", "우드톤","TOP9","촉촉한"],
     description: "창 풍경과 대화하기 좋은 카페",
   },
   {
@@ -557,7 +557,7 @@ let list = [
     title: "에이치에이치라운지",
     images: generateImagePaths(cafeSeogu, "k", 8),
     menu: ["SPACE", "WOOD", "FOREST"],
-    categories: ["중구", "힙해", "술도 파는","TOP9"],
+    categories: ["중구", "힙해", "술도 파는","TOP9","촉촉한"],
     description: "커피와 펍이 함께하는 라운지 펍",
   },
   {
@@ -581,7 +581,7 @@ let list = [
     title: "프랭크커핀바",
     images: generateImagePaths(cafeSeogu, "n", 8),
     menu: ["그라니따", "로마노", "바치오"],
-    categories: ["서구", "힙해", "여행느낌","TOP9"],
+    categories: ["서구", "힙해", "여행느낌","TOP9","촉촉한"],
     description: "유럽풍 분위기의 카페",
   },
   {
@@ -589,7 +589,7 @@ let list = [
     title: "피닉",
     images: generateImagePaths(cafeSeogu, "o", 8),
     menu: ["레인보우 리타", "90's 파르페", "옐로우 하와이 스무디"],
-    categories: ["서구", "힙해","TOP9"],
+    categories: ["서구", "힙해","TOP9","촉촉한"],
     description: "도심속 휴양지 분위기의 루프탑 카페",
   },
   {
@@ -607,7 +607,7 @@ let list = [
     title: "레코드카페도넛",
     images: generateImagePaths(cafeYuseong, "a", 7),
     menu: ["filtered black", "einspänner", "토마토 소르베"],
-    categories: ["유성구", "힙해", "아담한","TOP9"],
+    categories: ["유성구", "힙해", "아담한","TOP9","촉촉한"],
     description: "LP샵과 커피를 만나볼수 있는 곳",
   },
   {
@@ -623,7 +623,7 @@ let list = [
     title: "루티나",
     images: generateImagePaths(cafeYuseong, "c", 8),
     menu: ["아인슈페너", "수제 크림 모카", "망고렌지"],
-    categories: ["유성구", "모던한", "넓은","TOP9"],
+    categories: ["유성구", "모던한", "넓은","TOP9","촉촉한"],
     description: "모던한 인테리어와 넓은 실내의 카페",
   },
   {
@@ -631,7 +631,7 @@ let list = [
     title: "리케리케",
     images: generateImagePaths(cafeYuseong, "d", 9),
     menu: ["에스프레소", "리케리얼주스", "케모마일 스파클링 에이드"],
-    categories: ["유성구", "모던한", "넓은","TOP9"],
+    categories: ["유성구", "모던한", "넓은","TOP9","촉촉한"],
     description: "낮엔 카페, 밤엔 분위기 있는 펍을 운영하는 곳",
   },
   {
@@ -639,7 +639,7 @@ let list = [
     title: "쎄시마몽드",
     images: generateImagePaths(cafeYuseong, "e", 8),
     menu: ["땅콩 아몬드 크림 라떼", "스몰 라떼", "멋쟁이 토마토"],
-    categories: ["유성구", "힙해", "아담한","TOP9"],
+    categories: ["유성구", "힙해", "아담한","TOP9","촉촉한"],
     description: "힙한 인테리어와 레트로 무드의 카페",
   },
   {
@@ -647,7 +647,7 @@ let list = [
     title: "아케이드커피",
     images: generateImagePaths(cafeYuseong, "f", 8),
     menu: ["딥블랙", "밀크티", "얼그레이 크림라떼"],
-    categories: ["유성구", "넓은", "모던한","TOP9"],
+    categories: ["유성구", "넓은", "모던한","TOP9","촉촉한"],
     description: "독특한 인테리어와 넓은 실내의 카페",
   },
   {
@@ -655,7 +655,7 @@ let list = [
     title: "에이트",
     images: generateImagePaths(cafeYuseong, "g", 7),
     menu: ["아몬드 크림 라떼", "에이트 로투스 라떼", "소금라떼"],
-    categories: ["유성구", "넓은", "힙해","TOP9"],
+    categories: ["유성구", "넓은", "힙해","TOP9","촉촉한"],
     description: "넓은 공간과 모던한 인테리어가 돋보이는 베이커리 카페",
   },
   {
@@ -663,7 +663,7 @@ let list = [
     title: "읍천리382",
     images: generateImagePaths(cafeYuseong, "h", 6),
     menu: ["약과스무디", "불고기샌드위치", "딸기밭라떼"],
-    categories: ["유성구", "가성비","힙해","TOP9"],
+    categories: ["유성구", "가성비","힙해","TOP9","촉촉한"],
     description: "도심 속 레트로 감성 카페",
   },
   {

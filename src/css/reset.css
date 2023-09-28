@@ -85,10 +85,9 @@ a {
   /* gradient color */
   --sunny-gradient-up : #FD82A7;  /* (그라데이션 맑은 날 (위)) */
   --sunny-gradient-down : #FF8585;  /* (맑은 날 (아래)) */
-  --rainy-gradient-up : #33AED7;   /* (비오는 날 (위)) */
-  --rainy-gradient-down : #6C92F2; /* (비오는 날 (아래)) */
-  --cloudy-gradient-up :#135CA2; /* ( 흐린날 (위)) */
-  --cloudy-gradient-down : #75C2F6; /* (흐린날 (아래)) */
+  --rainy-gradient-up : #7998d3;   /* (비오는 날 (위)) */
+  --rainy-gradient-down : #acc1f7; /* (비오는 날 (아래)) */
   
+  /* 흐린날은 애매해서 뺐다. 흐린날 색깔을 써봤는데 너무 과해서 쓰지 않았다. */
 
 }

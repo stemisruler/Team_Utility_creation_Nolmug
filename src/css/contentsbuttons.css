@@ -233,6 +233,10 @@
   background: linear-gradient(to bottom, var(--sunny-gradient-up), var(--sunny-gradient-down));
 }
 
+.selectedRainy {
+  background: linear-gradient(to bottom, var(--rainy-gradient-up), var(--rainy-gradient-down));
+}
+
 .unselected {
   background-color: #E9E9E9;
 }
