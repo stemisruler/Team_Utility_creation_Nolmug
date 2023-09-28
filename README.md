@@ -45,9 +45,12 @@ https://www.figma.com/file/oV4EpeR06Pnwbk3raIsMgz/%5B%ED%94%BC%EA%B7%B8%EB%A7%88
 <h2>필요한 INSTALL</h2>
 npm install axios 
 <br>npm install swiper
-<br>npm install kakao-maps-sdk
+<br>npm install react-kakao-maps-sdk
 <br>npm install react-router-dom@6
 <br>npm install font-awesome --save
+
+npm install redux react-redux
+npm install redux-thunk
 
 webpack 설정 오류가 나올시
 npm install stream-http
