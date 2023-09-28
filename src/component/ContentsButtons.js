@@ -45,21 +45,13 @@ const ContentsButtons = () => {
   const [selectedCategories, setSelectedCategories] = useState(['#NOLMUG 강추']);
   let filteredData = data.list;
 
-  // 활성 탭이 '음식'이면 id가 'food'로 시작하는 데이터만 필터링
-  if (activeTab === '음식') {
-    filteredData = filteredData.filter(item => item.id.startsWith('food'));
-  }
-
-  // 활성 탭이 '음식'이면 id가 'cafe'로 시작하는 데이터만 필터링
-  if (activeTab === '카페/디저트') {
-    filteredData = filteredData.filter(item => item.id.startsWith('cafe'));
-  }
-
-  // 활성 탭이 '핫플레이스'이면 id가 'hotplace'로 시작하는 데이터만 필터링
-  if (activeTab === '핫플레이스') {
-    filteredData = filteredData.filter(item => item.id.startsWith('hotplace'));
-  }
-
+  const tabMapping = {
+    '음식': 'food',
+    '카페/디저트': 'cafe',
+    '핫플레이스': 'hotplace'
+  };
+  filteredData = filteredData.filter(item => item.id.startsWith(tabMapping[activeTab] || ''));
+  
   // selectedCategories가 비어 있거나 '#NOLMUG 강추'만 포함하고 있으면 'TOP9'를 가진 데이터만 필터링
   if (selectedCategories.length === 0 || (selectedCategories.length === 1 && selectedCategories[0] === '#NOLMUG 강추')) {
     filteredData = filteredData.filter(item => item.categories.includes('TOP9'));
@@ -72,30 +64,23 @@ const ContentsButtons = () => {
     );
   }
 
-  const handleClick = (tabName) => {
-    setActiveTab(tabName);
-    let newSubCategories = [];
+  // handleTabClick 함수 리팩터링
+  const newSubCategoryMapping = {
+    '음식': ['#NOLMUG 강추', '#밥이좋아', '#술이최고지', '#분위기좀있네', '#음식으로해외여행', '#인스타사진맛집'],
+    '카페/디저트': ['#NOLMUG 강추', '#카페로해외여행', '#초록초록해', '#예술적이야!', '#모던함', '#널찍하니좋네'],
+    '핫플레이스': ['#NOLMUG 강추', '#이색적인 재미', '#나는자연인이다', '#걷기좋아', '#야경맛집', '#응원가부를래?']
+  };
 
-    switch (tabName) {
-      case '음식':
-        newSubCategories = ['#NOLMUG 강추', '#밥이좋아', '#술이최고지', '#분위기좀있네', '#음식으로해외여행', '#인스타사진맛집'];
-        break;
-      case '카페/디저트':
-        newSubCategories = ['#NOLMUG 강추', '#카페로해외여행', '#초록초록해', '#예술적이야!', '#모던함', '#널찍하니좋네'];
-        break;
-      case '핫플레이스':
-        newSubCategories = ['#NOLMUG 강추', '#이색적인 재미', '#나는자연인이다', '#걷기좋아', '#야경맛집', '#응원가부를래?'];
-        break;
-      default:
-        break;
-    }
+  const handleTabClick = (tabName) => {
+    setActiveTab(tabName);
+    const newSubCategories = newSubCategoryMapping[tabName] || [];
 
     // 새로운 서브 카테고리 설정
     setSubCategories(newSubCategories);
-
     // 첫 번째 서브 카테고리를 활성화
     setSelectedCategories([newSubCategories[0]]);
   };
+
 
   const handleCategoryClick = (category) => {
     if (selectedCategories.includes(category)) {
@@ -161,27 +146,20 @@ const ContentsButtons = () => {
 
   const slicedFilteredData = filteredData.slice(0, 9);  // 처음 9개의 데이터만 선택
 
+  const tabs = ['음식', '카페/디저트', '핫플레이스'];
+
   return (
     <section className='contentsButtons' style={{ borderTop: '1px solid #E9E9E9', borderBottom: '1px solid #E9E9E9' }}>
       <div className='contentsTop'>
+        {tabs.map(tab => (
         <h4
-          onClick={(e) => handleClick('음식')}
-          className={activeTab === '음식' ? 'active' : ''}
+          key={tab}
+          onClick={() => handleTabClick(tab)}
+          className={activeTab === tab ? 'active' : ''}
         >
-          음식
+          {tab}
         </h4>
-        <h4
-          onClick={() => handleClick('카페/디저트')}
-          className={activeTab === '카페/디저트' ? 'active' : ''}
-        >
-          카페/디저트
-        </h4>
-        <h4
-          onClick={() => handleClick('핫플레이스')}
-          className={activeTab === '핫플레이스' ? 'active' : ''}
-        >
-          핫플레이스
-        </h4>
+      ))}
         <div className={`underline ${activeTab}`} />
 
       </div>
