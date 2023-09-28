@@ -95,7 +95,7 @@ input:focus {
 .container {
   display: flex;
   width: 1920px;
-  height: 871px;
+  height: calc(100vh - 90px);
 }
 
 .restaurant-container {

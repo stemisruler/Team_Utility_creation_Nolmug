@@ -8,6 +8,16 @@ function Sub1() {
     const [visibleItems, setVisibleItems] = useState(6);
     const [isLoading, setIsLoading] = useState(false);
     const list = data.list;
+    const [searchText, setSearchText] = useState("대전 맛집");
+
+    const handleSearch = (text) => {
+        setSearchText(text);
+    }
+
+    const handleRestaurantClick = (title) => {
+        setSearchText(`대전 ${title}`);
+      };
+    
 
     const handleScroll = useCallback((e) => {
         const container = e.target;
@@ -35,11 +45,11 @@ function Sub1() {
 
     return (
         <>
-            <SubHeader />
+            <SubHeader onSearch={handleSearch} />
             <div className="container">
                 <div className="restaurant-container">
                     {list.slice(0, visibleItems).map(item => (
-                        <div key={item.id} className="restaurant">
+                        <div key={item.id} className="restaurant" onClick={() => handleRestaurantClick(item.title)} style={{cursor:'pointer'}}>
                             <img src={item.images[0]} alt='대표이미지' />
                             <div className="details">
                                 <h2>{item.title}</h2>
@@ -49,8 +59,8 @@ function Sub1() {
                         </div>
                     ))}
                 </div>
-                <div className='mapping' style={{ backgroundImage: `url(./map.png)` }}>
-                    <KakaoMap />
+                <div className='mapping'>
+                    <KakaoMap keyword={searchText}  />
                 </div>
             </div>
         </>

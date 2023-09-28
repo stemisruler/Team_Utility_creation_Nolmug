@@ -1,9 +1,25 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
-function SubHeader() {
-    const [isFocused, setFocused] = useState(false);
+let timer;
 
+function SubHeader({ onSearch }) {
+    const [isFocused, setFocused] = useState(false);
+    const [searchText, setSearchText] = useState('');
+
+    const handleSearch = (query) => {
+        clearTimeout(timer); // 이전 타이머를 지움
+        timer = setTimeout(() => {
+          onSearch(`대전 ${query}`);
+        }, 3000);
+      };
+        
+    const handleChange = (e) => {
+        const query = e.target.value;
+        setSearchText(query);  // 실시간으로 입력값을 업데이트
+        handleSearch(query);  // 디바운싱 적용하여 검색
+    };
+    
     useEffect(() => {
         const handleFocus = () => setFocused(true);
         const handleBlur = () => setFocused(false);
@@ -30,7 +46,11 @@ function SubHeader() {
                     <div className='subSearch'>
                         <form>
                             <i className={`fa fa-search search-icon ${isFocused ? 'focused' : ''}`}></i>
-                            <input type='text' className='search-input' />
+                            <input type='text' className='search-input' 
+                            value={searchText}
+                            onChange={handleChange}
+                            />
+                            
                         </form>
                     </div>
                     <div className='subLogin'>
@@ -54,3 +74,4 @@ function SubHeader() {
 }
 
 export default SubHeader;
+
