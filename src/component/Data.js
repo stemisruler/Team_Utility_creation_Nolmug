@@ -473,7 +473,7 @@ let list = [
 
   //서구 카페 시작 16개
   {
-    id: "cafe_seogu_eunhang_a",
+    id: "cafe_seogu_dunsan_a",
     title: "SSAW",
     images: generateImagePaths(cafeSeogu, "a", 6),
     menu: ["바닐라빈라떼", "플랫화이트", "콜드브루아인슈페너"],
@@ -481,7 +481,7 @@ let list = [
     description: "깔끔하고 감각적인 분위기인 카페",
   },
   {
-    id: "cafe_seogu_eunhang_b",
+    id: "cafe_seogu_dunsan_b",
     title: "게리동서비스",
     images: generateImagePaths(cafeSeogu, "b", 8),
     menu: ["커널라떼", "까망베르크루와상", "플랫 화이트"],
@@ -489,7 +489,7 @@ let list = [
     description: "우드톤의 LP 카페",
   },
   {
-    id: "cafe_seogu_eunhang_c",
+    id: "cafe_seogu_dunsan_c",
     title: "랑데자뷰",
     images: generateImagePaths(cafeSeogu, "c", 7),
     menu: ["바닐라라떼", "밀크티", "자몽주스"],
@@ -497,7 +497,7 @@ let list = [
     description: "제주 자연의 느낌을 담은 감성 카페",
   },
   {
-    id: "cafe_seogu_eunhang_d",
+    id: "cafe_seogu_dunsan_d",
     title: "리셉션",
     images: generateImagePaths(cafeSeogu, "d", 4),
     menu: ["잠봉뵈르", "크루와상샌드위치", "크렘당쥬"],
@@ -505,7 +505,7 @@ let list = [
     description: "빈티지스러우면서 트렌디한 카페",
   },
   {
-    id: "cafe_seogu_eunhang_e",
+    id: "cafe_seogu_dunsan_e",
     title: "블레스롤",
     images: generateImagePaths(cafeSeogu, "e", 4),
     menu: ["오더쿠크림", "빠더쿠크림", "초코초코블레치노"],
@@ -513,7 +513,7 @@ let list = [
     description: "고급스러운 분위기의 감성 카페",
   },
   {
-    id: "cafe_seogu_eunhang_f",
+    id: "cafe_seogu_dunsan_f",
     title: "숍비피",
     images: generateImagePaths(cafeSeogu, "f", 5),
     menu: ["프렌치 토스트", "너츠라떼", "바나나 머쉬룸 밀크티"],
@@ -521,7 +521,7 @@ let list = [
     description: "트리뷰가 좋은 감성 카페",
   },
   {
-    id: "cafe_seogu_eunhang_g",
+    id: "cafe_seogu_dunsan_g",
     title: "슬리피타운",
     images: generateImagePaths(cafeSeogu, "g", 8),
     menu: ["슬리피라떼", "아이스크림 샌드위치", "마리아쥬 웨딩 임페리얼 티"],
@@ -529,7 +529,7 @@ let list = [
     description: "창 풍경과 대화하기 좋은 카페",
   },
   {
-    id: "cafe_seogu_eunhang_h",
+    id: "cafe_seogu_dunsan_h",
     title: "앤댄",
     images: generateImagePaths(cafeSeogu, "h", 6),
     menu: ["레몬글라세 마들렌", "플레인 휘낭시에", "바닐라 까눌레"],
@@ -537,7 +537,7 @@ let list = [
     description: "휘낭시에, 마들렌 맛집",
   },
   {
-    id: "cafe_seogu_eunhang_i",
+    id: "cafe_seogu_dunsan_i",
     title: "에어온",
     images: generateImagePaths(cafeSeogu, "i", 6),
     menu: ["카페라떼", "생복숭아에이드", "소금 바닐라 마카롱"],
@@ -545,7 +545,7 @@ let list = [
     description: "엔틱한 분위기와 직접 로스팅한 커피를 만나볼수 있는 곳",
   },
   {
-    id: "cafe_seogu_eunhang_j",
+    id: "cafe_seogu_dunsan_j",
     title: "요거틀리",
     images: generateImagePaths(cafeSeogu, "j", 6),
     menu: ["브라운 포도", "바질토마토", "플레인 그릭 요거트"],
@@ -553,7 +553,7 @@ let list = [
     description: "매일 아침 직접 배합,발효,숙성하는 그릭요거트 맛집",
   },
   {
-    id: "cafe_seogu_eunhang_k",
+    id: "cafe_seogu_dunsan_k",
     title: "에이치에이치라운지",
     images: generateImagePaths(cafeSeogu, "k", 8),
     menu: ["SPACE", "WOOD", "FOREST"],
@@ -561,7 +561,7 @@ let list = [
     description: "커피와 펍이 함께하는 라운지 펍",
   },
   {
-    id: "cafe_seogu_eunhang_l",
+    id: "cafe_seogu_dunsan_l",
     title: "크러쉬온드",
     images: generateImagePaths(cafeSeogu, "l", 5),
     menu: ["아메리카노(블렌딩)", "크렘 드", "흑임자 바스크 치즈케이크"],
@@ -569,7 +569,7 @@ let list = [
     description: "모던하고 미니멀한 인테리어 카페",
   },
   {
-    id: "cafe_seogu_eunhang_m",
+    id: "cafe_seogu_dunsan_m",
     title: "티켓부스",
     images: generateImagePaths(cafeSeogu, "m", 4),
     menu: ["", "", ""],
@@ -577,7 +577,7 @@ let list = [
     description: "",
   },
   {
-    id: "cafe_seogu_eunhang_n",
+    id: "cafe_seogu_dunsan_n",
     title: "프랭크커핀바",
     images: generateImagePaths(cafeSeogu, "n", 8),
     menu: ["그라니따", "로마노", "바치오"],
@@ -585,7 +585,7 @@ let list = [
     description: "유럽풍 분위기의 카페",
   },
   {
-    id: "cafe_seogu_eunhang_o",
+    id: "cafe_seogu_dunsan_o",
     title: "피닉",
     images: generateImagePaths(cafeSeogu, "o", 8),
     menu: ["레인보우 리타", "90's 파르페", "옐로우 하와이 스무디"],
@@ -593,7 +593,7 @@ let list = [
     description: "도심속 휴양지 분위기의 루프탑 카페",
   },
   {
-    id: "cafe_seogu_eunhang_p",
+    id: "cafe_seogu_dunsan_p",
     title: "홀리크로스",
     images: generateImagePaths(cafeSeogu, "p", 6),
     menu: ["홀크와플 킹", "홀크 수제버거", "순수 카카오라떼"],
@@ -603,7 +603,7 @@ let list = [
 
   //유성 카페 시작 12개
   {
-    id: "cafe_yuseong_eunhang_a",
+    id: "cafe_yuseong_bongmyeong_a",
     title: "레코드카페도넛",
     images: generateImagePaths(cafeYuseong, "a", 7),
     menu: ["filtered black", "einspänner", "토마토 소르베"],
@@ -611,7 +611,7 @@ let list = [
     description: "LP샵과 커피를 만나볼수 있는 곳",
   },
   {
-    id: "cafe_yuseong_eunhang_b",
+    id: "cafe_yuseong_bongmyeong_b",
     title: "루즈",
     images: generateImagePaths(cafeYuseong, "b", 5),
     menu: ["구름커피", "크로플", "체리 에이드"],
@@ -619,7 +619,7 @@ let list = [
     description: "독특한 인테리어가 돋보이는 곳",
   },
   {
-    id: "cafe_yuseong_eunhang_c",
+    id: "cafe_yuseong_bongmyeong_c",
     title: "루티나",
     images: generateImagePaths(cafeYuseong, "c", 8),
     menu: ["아인슈페너", "수제 크림 모카", "망고렌지"],
@@ -627,7 +627,7 @@ let list = [
     description: "모던한 인테리어와 넓은 실내의 카페",
   },
   {
-    id: "cafe_yuseong_eunhang_d",
+    id: "cafe_yuseong_bongmyeong_d",
     title: "리케리케",
     images: generateImagePaths(cafeYuseong, "d", 9),
     menu: ["에스프레소", "리케리얼주스", "케모마일 스파클링 에이드"],
@@ -635,7 +635,7 @@ let list = [
     description: "낮엔 카페, 밤엔 분위기 있는 펍을 운영하는 곳",
   },
   {
-    id: "cafe_yuseong_eunhang_e",
+    id: "cafe_yuseong_bongmyeong_e",
     title: "쎄시마몽드",
     images: generateImagePaths(cafeYuseong, "e", 8),
     menu: ["땅콩 아몬드 크림 라떼", "스몰 라떼", "멋쟁이 토마토"],
@@ -643,7 +643,7 @@ let list = [
     description: "힙한 인테리어와 레트로 무드의 카페",
   },
   {
-    id: "cafe_yuseong_eunhang_f",
+    id: "cafe_yuseong_bongmyeong_f",
     title: "아케이드커피",
     images: generateImagePaths(cafeYuseong, "f", 8),
     menu: ["딥블랙", "밀크티", "얼그레이 크림라떼"],
@@ -651,7 +651,7 @@ let list = [
     description: "독특한 인테리어와 넓은 실내의 카페",
   },
   {
-    id: "cafe_yuseong_eunhang_g",
+    id: "cafe_yuseong_bongmyeong_g",
     title: "에이트",
     images: generateImagePaths(cafeYuseong, "g", 7),
     menu: ["아몬드 크림 라떼", "에이트 로투스 라떼", "소금라떼"],
@@ -659,7 +659,7 @@ let list = [
     description: "넓은 공간과 모던한 인테리어가 돋보이는 베이커리 카페",
   },
   {
-    id: "cafe_yuseong_eunhang_h",
+    id: "cafe_yuseong_bongmyeong_h",
     title: "읍천리382",
     images: generateImagePaths(cafeYuseong, "h", 6),
     menu: ["약과스무디", "불고기샌드위치", "딸기밭라떼"],
@@ -667,7 +667,7 @@ let list = [
     description: "도심 속 레트로 감성 카페",
   },
   {
-    id: "cafe_yuseong_eunhang_i",
+    id: "cafe_yuseong_bongmyeong_i",
     title: "커피인터뷰",
     images: generateImagePaths(cafeYuseong, "i", 8),
     menu: ["코코파인", "자두에이드", "땅콩슈페너"],
@@ -675,7 +675,7 @@ let list = [
     description: "동남아감성의 도심 속 카페",
   },
   {
-    id: "cafe_yuseong_eunhang_j",
+    id: "cafe_yuseong_bongmyeong_j",
     title: "퍼플데이",
     images: generateImagePaths(cafeYuseong, "j", 6),
     menu: ["", "", ""],
@@ -683,7 +683,7 @@ let list = [
     description: "",
   },
   {
-    id: "cafe_yuseong_eunhang_k",
+    id: "cafe_yuseong_bongmyeong_k",
     title: "하루팡",
     images: generateImagePaths(cafeYuseong, "k", 7),
     menu: ["야끼소바빵", "메론빵", "소금빵"],
@@ -691,7 +691,7 @@ let list = [
     description: "일본식 베이커리 빵집",
   },
   {
-    id: "cafe_yuseong_eunhang_l",
+    id: "cafe_yuseong_bongmyeong_l",
     title: "하이테이블",
     images: generateImagePaths(cafeYuseong, "l", 7),
     menu: ["블루베리라떼", "딸기라떼", "코코넛 스무디"],

@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchWeather } from '../thunks/weatherThunks';
+import { setUserLocation } from '../actions/userLocationActions';
+import '../css/Sidebar.css'
 
 function Sidebar(props) {
     const [acco, setAcco] = useState(false);
@@ -22,7 +24,11 @@ function Sidebar(props) {
         dispatch(fetchWeather());
     }, [dispatch]);
 
-
+    /* redux로 관리되는 유저 위치 정보 바꾸려고 만드는 함수*/
+    const changeLocation = (location) => {
+        dispatch(setUserLocation(location));
+      };
+      
     return (
         <section className={`gnb ${props.classStatus ? 'on' : ''}`}>
             <div className='nav'>
@@ -41,9 +47,9 @@ function Sidebar(props) {
                             display: 'block', padding: '0.5rem 1rem',
                             height: '180px'
                         }}>
-                            <li>둔산동</li>
-                            <li>은행동</li>
-                            <li>봉명동</li>
+                            <li onClick={() => changeLocation('dunsan')} className='locationItem'>둔산동</li>
+                            <li onClick={() => changeLocation('eunhang')} className='locationItem'>은행동</li>
+                            <li onClick={() => changeLocation('bongmyeong')} className='locationItem'>봉명동</li>
                         </ul>
                     }
                     <li className='cafe' onClick={accon2}>카페
@@ -54,9 +60,9 @@ function Sidebar(props) {
                             display: 'block', padding: '0.5rem 1rem',
                             height: '180px'
                         }}>
-                            <li>둔산동</li>
-                            <li>은행동</li>
-                            <li>봉명동</li>
+                            <li onClick={() => changeLocation('dunsan')} className='locationItem'>둔산동</li>
+                            <li onClick={() => changeLocation('eunhang')} className='locationItem'>은행동</li>
+                            <li onClick={() => changeLocation('bongmyeong')} className='locationItem'>봉명동</li>
                         </ul>
                     }
                     <li className='hotPlace'>핫플레이스</li>

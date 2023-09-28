@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import '../css/contentsbuttons.css';
 import { data } from './Data'; // Data.js 파일을 import
 import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 // 매핑 객체 추가
 const categoryMapping = {
@@ -40,6 +41,7 @@ const categoryMapping = {
 
 const ContentsButtons = () => {
 
+  const { location } = useSelector(state => state.userLocation);
   const [activeTab, setActiveTab] = useState('음식');
   const [subCategories, setSubCategories] = useState(['#NOLMUG 강추', '#밥이좋아', '#술이최고지', '#분위기좀있네', '#음식으로해외여행', '#인스타사진맛집']);
   const [selectedCategories, setSelectedCategories] = useState(['#NOLMUG 강추']);
@@ -89,6 +91,13 @@ const ContentsButtons = () => {
       setSelectedCategories([category]);  // 새로운 카테고리를 선택하면 그것만 배열에 넣음
     }
   };
+
+  // 위치 정보를 추가로 고려한 필터링
+  if (activeTab === '음식' || activeTab === '카페/디저트') {
+  filteredData = filteredData.filter(item => {
+    return item.id.startsWith(tabMapping[activeTab] || '') && item.id.includes(location);
+  });
+}
 
   // 팝업 창과 관련된 상태
   const [isPopupOpen, setIsPopupOpen] = useState(false);
