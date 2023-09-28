@@ -1,35 +1,35 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { Map, MapMarker } from "react-kakao-maps-sdk"
 
+const CATEGORY_CODES = ['AT4', 'FD6', 'CE7']; // 카카오에서 제공하는 관광명소, 음식점, 카페만을 보여주는 코드
+
 export default function KakaoMap({ keyword }) {
-  const [info, setInfo] = useState(null);
   const [markers, setMarkers] = useState([]);
   const [map, setMap] = useState(null);
-  const prevKeywordRef = useRef();  // 이전 keyword 저장용
-
+  const prevKeywordRef = useRef();
 
   useEffect(() => {
-    if (!map || keyword === prevKeywordRef.current) return; // keyword가 변경되지 않았으면 return
+    if (!map || keyword === prevKeywordRef.current) return;
     
-    prevKeywordRef.current = keyword;  // 현재 keyword를 prevKeyword로 설정
-
-    const ps = new window.kakao.maps.services.Places();
+    prevKeywordRef.current = keyword;
+    const ps = new window.kakao.maps.services.Places(map);
 
     ps.keywordSearch(keyword, (data, status, _pagination) => {
       if (status === window.kakao.maps.services.Status.OK) {
+        // 카테고리별로 필터링
+        const filteredData = data.filter(d => CATEGORY_CODES.includes(d.category_group_code));
         const bounds = new window.kakao.maps.LatLngBounds();
         let newMarkers = [];
 
-        for (var i = 0; i < data.length; i++) {
+        for (let i = 0; i < filteredData.length; i++) {
           newMarkers.push({
             position: {
-              lat: data[i].y,
-              lng: data[i].x,
+              lat: filteredData[i].y,
+              lng: filteredData[i].x,
             },
-            content: data[i].place_name,
+            content: filteredData[i].place_name,
           });
-
-          bounds.extend(new window.kakao.maps.LatLng(data[i].y, data[i].x));
+          bounds.extend(new window.kakao.maps.LatLng(filteredData[i].y, filteredData[i].x));
         }
         
         setMarkers(newMarkers);
@@ -45,26 +45,26 @@ export default function KakaoMap({ keyword }) {
       level={1}
       onCreate={setMap}
     >
-      {markers.map((marker) => (
+      {markers.map((marker, index) => (
         <MapMarker
-          key={`marker-${marker.content}-${marker.position.lat},${marker.position.lng}`}
+          key={index}
           position={marker.position}
-          onClick={() => setInfo(marker)}
         >
-          {info && info.content === marker.content && (
-              <div style={{
-                display: 'inline-block',
-                color: '#000',
-                width:'145px',
-                textAlign: 'center',
-                height:'28px',
-                padding:'3px'
-
-              }}>
-            {marker.content}</div>
-          )}
+          <div style={{
+          display: 'inline-block',
+          color: '#000',
+          width: '145px',
+          textAlign: 'center',
+          height: '28px',
+          padding: '3px',
+          overflow: 'hidden',
+          textOverflow: 'ellipsis',  
+          whiteSpace: 'nowrap'
+          }}>
+            {marker.content}
+          </div>
         </MapMarker>
       ))}
     </Map>
-  )
+  );
 }
